@@ -69,7 +69,7 @@ footnotereturnlinkcontents = "↩"
     languageName = "English"
     languageCode = "en-us"
     weight = 1
-    title = "Hugo-HT"
+    title = "Yalin"
     contentDir = "content/en"
 
     [languages.en.params]
@@ -98,11 +98,21 @@ footnotereturnlinkcontents = "↩"
       url = "/posts/"
       weight = 3
 
+    [[languages.en.menu.main]]
+      name = "Article"
+      url = "/article/"
+      weight = 4
+
+    [[languages.en.menu.main]]
+      name = "Tutorial"
+      url = "/study/"
+      weight = 5
+
   [languages.cn]
     languageName = "中文"
     languageCode = "zh-cn"
     weight = 2
-    title = "Hugo-HT"
+    title = "亚林"
     contentDir = "content/cn"
 
     [languages.cn.params]
@@ -130,3 +140,17 @@ footnotereturnlinkcontents = "↩"
       name = "博客"
       url = "/posts/"
       weight = 3
+    
+    [[languages.cn.menu.main]]
+      name = "文章"
+      url = "/article/"
+      weight = 4
+
+    [[languages.cn.menu.main]]
+      name = "学习"
+      url = "/study/"
+      weight = 5
+
+
+
+    

@@ -92,6 +92,20 @@
     <loc>http://localhost:1313/en/1915/01/01/road-not-taken/</loc>
     <lastmod>1915-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/en/paper/</loc>
+  </url><url>
+    <loc>http://localhost:1313/en/study/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/study/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/en/study/"
+                />
+  </url><url>
     <loc>http://localhost:1313/en/about/</loc>
     <xhtml:link
                 rel="alternate"

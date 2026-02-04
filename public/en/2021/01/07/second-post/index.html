@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hugo-HT</title>
+    <title>Yalin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="/css/style.css" />
@@ -54,6 +54,10 @@
         <li><a href="/en/about/">About</a></li>
       
         <li><a href="/en/posts/">Posts</a></li>
+      
+        <li><a href="/en/article/">Article</a></li>
+      
+        <li><a href="/en/study/">Tutorial</a></li>
       
     </ul>
 
@@ -374,8 +378,21 @@ You can use this whatever way you like. I usually use it to remind myself of som
  
 </div>
     <script type="text/javascript" src="/js/math-code.js"></script>
-<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
 <script type="text/javascript" src="/js/center-img.js"></script>
+
 
     <ul class="footer-links">
 

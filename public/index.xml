@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo-HT</title>
+    <title>亚林</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Hugo-HT</description>
+    <description>Recent content on 亚林</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 07 Jan 2021 13:42:27 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 16 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一文简介 Bert 模型、向量表示、向量搜索、向量库、API 构建、API 接口、并行计算、RAG、Next.js、React.js、LangChain</title>
+      <link>http://localhost:1313/article/bert/</link>
+      <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/article/bert/</guid>
+      <description>&lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xD;&#xA;    &lt;a href=&#34;http://localhost:1313/media/cnblog/htmovies.png&#34;  itemprop=&#34;contentUrl&#34;&gt; &#xD;&#xA;        &lt;img itemprop=&#34;thumbnail&#34;&#xD;&#xA;            src=&#34;http://localhost:1313/media/cnblog/htmovies.png&#34;&#xD;&#xA;            &#xD;&#xA;            width=&#34;700&#34;/&gt;&#xD;&#xA;    &lt;/a&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;figcaption&gt;&#xD;&#xA;        &lt;h4&gt;本文成品，一个简易 RAG 应用，网址为 https://htmovies.vercel.app/，检索需梯子&lt;/h4&gt;&#xD;&#xA;        &#xD;&#xA;    &lt;/figcaption&gt;&#xD;&#xA;    &#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&#xD;&#xA;&#xA;&lt;p&gt;假设我们现在有一万个电影的文字描述，如何根据用户的搜索，推荐给用户最相关的几个电影？比如，用户输入「NASA 努力救一个困在火星的宇航员」，那我们肯定会导出《火星救援》。如何实现呢？&lt;/p&gt;&#xA;&lt;p&gt;办法是，假设我们有一个神奇的工具，你可以把它想象成一张网。任何一串文字通过它之后，都会变成一个高维空间里的一个向量，也就是高维空间里的一个坐标。然后我们让这一万条电影的文字描述经过这张网，我们得到一万个坐标。用户输入搜索，我们让这个搜索也经过这张网，得到一个坐标。最后的结果，我们计算这个搜索对应的坐标与每一个电影坐标的余弦相似度 (Cosine Similarity)，然后找到结果最大的几个，就是我们的搜索结果。&lt;/p&gt;&#xA;&lt;p&gt;这里涉及到一个问题。如果我们把每串文字经过网后的结果看成是一个坐标，那么寻找相似的点，可以用&lt;a href=&#34;https://zh.wikipedia.org/zh-hans/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E8%B7%9D%E7%A6%BB&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;欧几里得距离&lt;/a&gt;&#xD;&#xA;&#xD;&#xA;。如果我们把每个结果看成是一个向量，那么需要用余弦相似度。那具体用什么方法呢？&lt;a href=&#34;https://platform.openai.com/docs/guides/embeddings#which-distance-function-should-i-use&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;OpenAI Platform&lt;/a&gt;&#xD;&#xA;&#xD;&#xA; 给出的答案是：&lt;/p&gt;&#xA;&lt;div class=&#34;code-container&#34;&gt;&#xD;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;We recommend cosine similarity. The choice of distance function typically doesn&#39;t matter much.&#xD;&#xA;&#xD;&#xA;OpenAI embeddings are normalized to length 1, which means that:&#xD;&#xA;    - Cosine similarity can be computed slightly faster using just a dot product&#xD;&#xA;    - Cosine similarity and Euclidean distance will result in the identical rankings&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;&lt;/div&gt;&lt;p&gt;也就是说，先把每一个点的坐标归一化，也就是确保每一个向量长度为 1，然后，不管我们用欧几里得距离还是余弦相似度，不影响搜索结果。为什么？我们来证明一下：&lt;/p&gt;&#xA;&lt;p&gt;归一化之后，&lt;code&gt;$||A|| = ||B|| = 1$&lt;/code&gt;，余弦相似度为：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Markdown 试水</title>
       <link>http://localhost:1313/2021/01/07/first-post-cn/</link>
