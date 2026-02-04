@@ -139,8 +139,21 @@ This is my website! Currently, I am a student struggling in the deep sea of econ
  
 </div>
     <script type="text/javascript" src="/js/math-code.js"></script>
-<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
 <script type="text/javascript" src="/js/center-img.js"></script>
+
 
     <ul class="footer-links">
 
@@ -154,7 +167,7 @@ This is my website! Currently, I am a student struggling in the deep sea of econ
 
         
         <li>
-          <a href="https://github.com/USERNAME/REPONAME" target="_blank" class="footer-link-flex">
+          <a href="https://github.com/Wertherliu/mysite" target="_blank" class="footer-link-flex">
             <span></span>
             <i class="fa fa-github" style="font-size: 18px; margin-left: 4px;"></i>
           </a>
@@ -177,7 +190,7 @@ This is my website! Currently, I am a student struggling in the deep sea of econ
       
       
       
-        2020-2021
+        2020-0001
       
     </div>
     

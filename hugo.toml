@@ -1,8 +1,8 @@
-baseURL = "http://localhost:1313/"
-languageCode = "en-us"
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
-title = "My New Hugo Site"
+baseURL = "baseURL = "https://yalinliu.org/"
+languageCode = "zh-cn"
+defaultContentLanguage = "cn"
+defaultContentLanguageInSubdir = false
+title = "Yalin"
 theme = "hugo-ht"
 enableRobotsTXT = true
 footnotereturnlinkcontents = "↩"
@@ -52,15 +52,13 @@ footnotereturnlinkcontents = "↩"
     startLevel = 2
 
 [imaging]
-  quality = 100
+  quality = 80
 
 [params]
-  MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
-  MathJaxVersion = "2.7.5"
+  MathJaxCDN = "https://cdn.jsdelivr.net/npm"
+  MathJaxVersion = "4"
   favicon = "media/hugo-logo.png"
-  GithubRepo = "https://github.com/USERNAME/REPONAME"
-  copyright = "&copy;"
-  copyrightYearStart = "2020"
+  GithubRepo = "https://github.com/Wertherliu/mysite"
   blogDirName = "posts"
   logo = { url = "hugo-logo.png", width = 50.0, height = 50.0, alt = "Hugo-ht" }
 
@@ -75,7 +73,7 @@ footnotereturnlinkcontents = "↩"
     contentDir = "content/en"
 
     [languages.en.params]
-      description = "Personal website of Your Name"
+      description = "Personal website of Yalin"
       licenseURL = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
     
     [languages.en.taxonomies]
@@ -108,7 +106,7 @@ footnotereturnlinkcontents = "↩"
     contentDir = "content/cn"
 
     [languages.cn.params]
-      description = "你的个人网站"
+      description = "刘亚林的个人网站"
       licenseURL = "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans"
 
     [languages.cn.taxonomies]
