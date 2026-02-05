@@ -37,6 +37,18 @@
     <loc>http://localhost:1313/article/bert/</loc>
     <lastmod>2025-03-16T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/economic-history/</loc>
+    <lastmod>2024-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/article/ankang/</loc>
+    <lastmod>2024-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/economics-history/</loc>
+    <lastmod>2024-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/article/history-finance/</loc>
+    <lastmod>2024-02-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2021-01-07T13:42:27-05:00</lastmod>
     <xhtml:link
@@ -112,8 +124,6 @@
                 hreflang="zh-cn"
                 href="http://localhost:1313/study/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <xhtml:link

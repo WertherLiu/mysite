@@ -16,6 +16,13 @@
       <description></description>
     </item>
     <item>
+      <title>Economics History</title>
+      <link>http://localhost:1313/tags/economics-history/</link>
+      <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/economics-history/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Article</title>
       <link>http://localhost:1313/tags/article/</link>
       <pubDate>Thu, 07 Jan 2021 13:42:27 -0500</pubDate>
@@ -30,10 +37,10 @@
       <description></description>
     </item>
     <item>
-      <title>Ai</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <title>Economic History</title>
+      <link>http://localhost:1313/tags/economic-history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>http://localhost:1313/tags/economic-history/</guid>
       <description></description>
     </item>
   </channel>
