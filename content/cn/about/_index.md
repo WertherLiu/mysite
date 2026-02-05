@@ -14,7 +14,7 @@ toc: true
 2020-2024，中国人民大学，经济学——数学双学位试验班
 
    - 毕业论文：《清末财政分权与近代化》
-   - 指导老师：[胡思捷老师](https://www.hkihss.hku.hk/en/people/sijie-hu/)  
+   - 指导教师：[胡思捷](https://www.hkihss.hku.hk/en/people/sijie-hu/)老师  
 
 2022年秋季，爱尔兰都柏林大学，社会科学学院经济系交换生
 
