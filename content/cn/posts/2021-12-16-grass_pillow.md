@@ -1,7 +1,7 @@
 ---
 title: 《草枕》读书笔记
 date: 2021-12-16
-authors: 刘亚林
+author: 刘亚林
 slug: grass-pillow
 tags:
   - 夏目漱石

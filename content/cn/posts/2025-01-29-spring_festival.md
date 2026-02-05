@@ -1,7 +1,7 @@
 ---
 title: 又一年春节
 date: 2025-01-29
-authors: 刘亚林
+author: 刘亚林
 slug: spring_festival
 tags:
   - 杂记
