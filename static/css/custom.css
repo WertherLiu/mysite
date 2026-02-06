@@ -29,3 +29,17 @@
   margin-left: auto;
   float: none;
 }
+
+.spoiler {
+  background: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  padding: 0 4px;
+  text-decoration: line-through;
+  transition: color 120ms ease, background 120ms ease;
+}
+
+.spoiler:hover {
+  color: inherit;
+  background: transparent;
+}
