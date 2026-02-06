@@ -5,6 +5,7 @@ defaultContentLanguageInSubdir = false
 title = "Yalin"
 theme = "hugo-ht"
 enableRobotsTXT = true
+enableGitInfo = true
 footnotereturnlinkcontents = "↩"
 
 
