@@ -1,0 +1,56 @@
+<nav class="nav">
+  <a href="{{ "/" | relLangURL }}" class="nav-logo">
+    {{ $logo := .Site.Params.logo.url }}
+    {{ if or (hasPrefix $logo "http://") (hasPrefix $logo "https://") }}
+    <img src="{{ $logo }}"
+         width="{{ .Site.Params.logo.width }}"
+         height="{{ .Site.Params.logo.height }}"
+         alt="{{ .Site.Params.logo.alt }}">
+    {{ else }}
+    <img src="{{ print "media/" $logo | relURL }}"
+         width="{{ .Site.Params.logo.width }}"
+         height="{{ .Site.Params.logo.height }}"
+         alt="{{ .Site.Params.logo.alt }}">
+    {{ end }}
+    <span class="nav-title">{{ .Site.Title }}</span>
+  </a>
+
+  <div class="nav-right">
+    <ul class="nav-links">
+      {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+
+    {{ if gt (len .Site.Languages) 1 }}
+    <div class="language-switcher">
+      <button id="language-button">
+        <i class="fa fa-language" style="font-size:20px;"></i> {{ .Site.Language.LanguageName }} <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="language-menu" class="language-menu">
+        {{ range .Site.Languages }}
+          {{ if ne .Lang $.Site.Language.Lang }}
+            <a href="{{ .Lang | relURL }}">{{ .LanguageName }}</a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const button = document.getElementById("language-button");
+    const menu = document.getElementById("language-menu");
+
+    button.addEventListener("click", function(e) {
+      e.stopPropagation();
+      menu.classList.toggle("show");
+    });
+
+    document.addEventListener("click", function() {
+      menu.classList.remove("show");
+    });
+  });
+</script>

@@ -57,10 +57,10 @@ footnotereturnlinkcontents = "↩"
 [params]
   MathJaxCDN = "https://cdn.jsdelivr.net/npm"
   MathJaxVersion = "4"
-  favicon = "https://assets.yalinliu.org/image/icon.jpg"
+  favicon = "https://assets.yalinliu.org/icon.jpg"
   GithubRepo = "https://github.com/Wertherliu/mysite"
   blogDirName = "posts"
-  logo = { url = "https://assets.yalinliu.org/image/icon.jpg", width = 50.0, height = 50.0, alt = "Yalin's Website" }
+  logo = { url = "https://assets.yalinliu.org/logo.jpg",  alt = "Yalin's Website" }
 
 
 [languages]
@@ -69,7 +69,7 @@ footnotereturnlinkcontents = "↩"
     languageName = "English"
     languageCode = "en-us"
     weight = 1
-    title = "Yalin"
+    title = "Yalin Liu | 刘亚林"
     contentDir = "content/en"
 
     [languages.en.params]
@@ -112,7 +112,7 @@ footnotereturnlinkcontents = "↩"
     languageName = "中文"
     languageCode = "zh-cn"
     weight = 2
-    title = "亚林"
+    title = "刘亚林 | Yalin Liu"
     contentDir = "content/cn"
 
     [languages.cn.params]

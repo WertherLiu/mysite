@@ -1,0 +1,31 @@
+/* Local overrides without touching theme files */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  float: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0;
+}
+
+.nav-logo img {
+  max-height: 64px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.nav-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1;
+}
+
+.nav-right {
+  margin-left: auto;
+  float: none;
+}
