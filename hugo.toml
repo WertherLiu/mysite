@@ -57,10 +57,10 @@ footnotereturnlinkcontents = "↩"
 [params]
   MathJaxCDN = "https://cdn.jsdelivr.net/npm"
   MathJaxVersion = "4"
-  favicon = "media/hugo-logo.png"
+  favicon = "https://assets.yalinliu.org/image/icon.jpg"
   GithubRepo = "https://github.com/Wertherliu/mysite"
   blogDirName = "posts"
-  logo = { url = "hugo-logo.png", width = 50.0, height = 50.0, alt = "Hugo-ht" }
+  logo = { url = "https://assets.yalinliu.org/image/icon.jpg", width = 50.0, height = 50.0, alt = "Yalin's Website" }
 
 
 [languages]
