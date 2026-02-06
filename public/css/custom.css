@@ -25,6 +25,16 @@
   line-height: 1;
 }
 
+@media (max-width: 768px) {
+  .nav-title {
+    display: none;
+  }
+
+  .nav-logo {
+    gap: 0;
+  }
+}
+
 .nav-right {
   margin-left: auto;
   float: none;
