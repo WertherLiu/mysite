@@ -6,8 +6,15 @@
     <description>Recent content in Tags on 刘亚林 | Yalin Liu</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Feb 2026 15:31:25 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 24 Feb 2026 15:33:30 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>诗</title>
+      <link>http://localhost:1313/tags/%E8%AF%97/</link>
+      <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E8%AF%97/</guid>
+      <description></description>
+    </item>
     <item>
       <title>ML</title>
       <link>http://localhost:1313/tags/ml/</link>
@@ -16,24 +23,10 @@
       <description></description>
     </item>
     <item>
-      <title>诗</title>
-      <link>http://localhost:1313/tags/%E8%AF%97/</link>
-      <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E8%AF%97/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>杂记</title>
       <link>http://localhost:1313/tags/%E6%9D%82%E8%AE%B0/</link>
       <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/%E6%9D%82%E8%AE%B0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>本科生活</title>
-      <link>http://localhost:1313/tags/%E6%9C%AC%E7%A7%91%E7%94%9F%E6%B4%BB/</link>
-      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E6%9C%AC%E7%A7%91%E7%94%9F%E6%B4%BB/</guid>
       <description></description>
     </item>
     <item>

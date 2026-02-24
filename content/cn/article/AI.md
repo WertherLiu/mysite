@@ -1,6 +1,6 @@
 ---
 
-title: "一文简介 Bert 模型、向量表示、向量搜索、向量库、API 构建、API 接口、并行计算、RAG、Next.js、React.js、LangChain"
+title: "demo"
 date: 2025-03-16
 author: 郝鸿涛
 slug: bert

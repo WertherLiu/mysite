@@ -34,7 +34,9 @@ toc: true
 ## 常逛网站
 - [联合早报网](https://www.zaobao.com/), 我摸鱼的家园。
 - [谢益辉的主页](https://yihui.org/), R语言，统计学，写作。
+- [郝洪涛的主页](https://hongtaoh.com/en/)，本站的模板来源。
 - [毕蓝老师的主页](https://easyhistoryus.com/), 美国历史介绍。
+- [北京大学经济学会](https://pkuecons.org/)，我负责运营的社团网站。
 
 ## 指导学生
 
