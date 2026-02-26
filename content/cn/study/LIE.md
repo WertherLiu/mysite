@@ -1,5 +1,6 @@
 ---
 title: "迭代期望定律（LIE）"
+slug: LIE
 date: 2025-12-26
 author: 刘亚林
 categories: ["数学"]
