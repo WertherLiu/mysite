@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>刘亚林 | Yalin Liu</title>
-    <link>http://localhost:1313/study/</link>
-    <description>Recent content on 刘亚林 | Yalin Liu</description>
+    <title>数学 on 刘亚林 | Yalin Liu</title>
+    <link>http://localhost:1313/categories/%E6%95%B0%E5%AD%A6/</link>
+    <description>Recent content in 数学 on 刘亚林 | Yalin Liu</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="http://localhost:1313/study/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>迭代期望定律（LIE）</title>
       <link>http://localhost:1313/study/lie/</link>

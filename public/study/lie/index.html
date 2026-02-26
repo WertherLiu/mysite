@@ -104,51 +104,56 @@
     </div>
 
 
-
-<main class="content">
-
-  <h1>#音乐</h1>
+<main class = "content" role="main">
+<div style="text-align: center">
   
+  <h1>迭代期望定律（LIE）</h1>
+  <p>刘亚林 
+   / 2025-12-26 </p>
+  
+</div>
 
-  <div class="list-page">
 
-    
 
-    
-      <ul>
-        
-          <h2 style="text-align: left;">2025</h2>
-          
-            
-              <p>
-                <span class="date">
-                  2025-11-12
-                </span>
-                <a href="/2025/11/12/poem/">
-                  岭南读诗
-                </a>
-              </p>
-            
-          
-        
-          <h2 style="text-align: left;">2023</h2>
-          
-            
-              <p>
-                <span class="date">
-                  2023-04-19
-                </span>
-                <a href="/2023/04/19/rain_window/">
-                  窗外在下雨
-                </a>
-              </p>
-            
-          
-        
-      </ul>
-    
+<div class="body-text list-text">
+<h2 id="lie">LIE<a href="#lie" class="header-anchor" ariaLabel="Anchor"> # </a></h2>
+<p><strong>迭代期望定律</strong>（Law of Iterated Expectations, LIE），通常也被称为<strong>全期望公式</strong>（Adam&rsquo;s Law），是概率论中一个非常核心的定理。它描述了随机变量的条件期望与边缘期望之间的关系。</p>
+<h3 id="定理的一般形式">定理的一般形式<a href="#定理的一般形式" class="header-anchor" ariaLabel="Anchor"> # </a></h3>
+<p>假设 $X$ 和 $Y$ 是定义在同一概率空间上的随机变量，且 $E[X]$ 存在（即 $E[|X|] &lt; \infty$），那么其一般形式为：</p>
+<p>$$E[X] = E[E[X|Y]]$$</p>
+<hr>
+<h3 id="如何理解这个公式">如何理解这个公式？<a href="#如何理解这个公式" class="header-anchor" ariaLabel="Anchor"> # </a></h3>
+<p>这个公式初看可能有点绕，我们可以将其拆解为两个层次：</p>
+<ul>
+<li><strong>内层期望 $E[X|Y]$</strong>：这是一个关于 $Y$ 的函数（也是一个随机变量）。它表示在已知 $Y$ 的取值时，$X$ 的平均值。</li>
+<li><strong>外层期望 $E[\cdot]$</strong>：这是对随机变量 $Y$ 的所有可能取值进行加权平均。</li>
+</ul>
+<p>直观理解：</p>
+<p>如果你想计算全校学生的平均身高（$E[X]$），你可以先按班级（$Y$）分组，算出每个班的平均身高（$E[X|Y]$），然后再对这些班级平均分进行加权平均（外层 $E$）。最终得到的结果一定等于全校的平均身高。</p>
+<hr>
+<h3 id="更广义的形式基于-sigma-代数">更广义的形式（基于 $\sigma$-代数）<a href="#更广义的形式基于-sigma-代数" class="header-anchor" ariaLabel="Anchor"> # </a></h3>
+<p>在更高级的概率论（测度论背景）中，该定理的形式更为抽象。设 $\mathcal{G}$ 是一个子 $\sigma$-代数（代表某种信息集），则：</p>
+<p>$$E[X] = E[E[X|\mathcal{G}]]$$</p>
+<p>此外，还有一个非常有用的<strong>塔式属性（Tower Property）</strong>。如果 $\mathcal{G}_1 \subset \mathcal{G}_2$（即 $\mathcal{G}_1$ 包含的信息比 $\mathcal{G}_2$ 少），那么：</p>
+<p>$$E[E[X|\mathcal{G}_2]|\mathcal{G}_1] = E[X|\mathcal{G}_1]$$</p>
+<p>这说明：<strong>如果你在拥有较少信息的情况下对一个“基于较多信息的预测值”进行预测，你的结果等同于直接利用较少信息进行的预测。</strong>（通俗点说：最简单的信息决定了最终的期望）。</p>
 
-  </div>
+
+
+<p style="color:#777;">
+   2025-12-26
+  
+    • <a href="https://github.com/Wertherliu/mysite/blob/main/content/cn/study%5cLIE.md" target="_blank"></a>
+  
+</p>
+
+</div>
+
+<div class="pagination">
+  
+  
+</div>
+
 </main>
 
 <footer class="footer">
@@ -156,6 +161,24 @@
   <div class="footer-content">
 
     <div class="content">
+
+<script src="https://giscus.app/client.js"
+        data-repo="hongtaoh/hongtaoh.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkyNjM3NDMzMTY="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOD7hnVM4CUKk6"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+</br>
  
 </div>
     <script type="text/javascript" src="/js/math-code.js"></script>
@@ -209,7 +232,7 @@
       
       
       
-        2020-2026
+        2020-2025
       
     </div>
     
@@ -217,6 +240,8 @@
   </div>
 
 </footer>
+
+
 
 
 

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-02-24T19:26:46+08:00</lastmod>
+    <lastmod>2026-02-25T21:18:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -16,10 +16,10 @@
                 />
   </url><url>
     <loc>http://localhost:1313/2026/02/24/poem1/</loc>
-    <lastmod>2026-02-24T19:26:46+08:00</lastmod>
+    <lastmod>2026-02-25T21:18:43+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E8%AF%97/</loc>
-    <lastmod>2026-02-24T19:26:46+08:00</lastmod>
+    <lastmod>2026-02-25T21:18:43+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/2026/02/12/record/</loc>
     <lastmod>2026-02-24T19:26:46+08:00</lastmod>
@@ -27,23 +27,36 @@
     <loc>http://localhost:1313/2026/02/06/about_site/</loc>
     <lastmod>2026-02-06T20:31:25+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-02-04T16:58:51+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/categories/%E6%95%B0%E5%AD%A6/</loc>
+    <lastmod>2025-12-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/study/lie/</loc>
+    <lastmod>2025-12-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/2025/11/12/poem/</loc>
-    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-25T21:18:43+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E9%9F%B3%E4%B9%90/</loc>
-    <lastmod>2025-11-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-25T21:18:43+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/article/bert/</loc>
     <lastmod>2026-02-24T19:26:46+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ml/</loc>
     <lastmod>2026-02-24T19:26:46+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/2025/03/16/rain_window/</loc>
-    <lastmod>2025-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E9%9B%A8/</loc>
-    <lastmod>2025-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/2025/01/29/spring_festival/</loc>
     <lastmod>2026-02-05T22:13:31+08:00</lastmod>
@@ -62,6 +75,12 @@
   </url><url>
     <loc>http://localhost:1313/article/history-finance/</loc>
     <lastmod>2026-02-05T12:05:46+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2023/04/19/rain_window/</loc>
+    <lastmod>2026-02-25T21:18:43+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E9%9B%A8/</loc>
+    <lastmod>2026-02-25T21:18:43+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/2021/12/16/student/</loc>
     <lastmod>2026-02-05T22:13:31+08:00</lastmod>
@@ -92,19 +111,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="http://localhost:1313/tags/article/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-02-04T16:58:51+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/categories/"
                 />
   </url><url>
     <loc>http://localhost:1313/2021/01/07/first-post-cn/</loc>
@@ -172,7 +178,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/about/</loc>
-    <lastmod>2026-02-24T19:26:46+08:00</lastmod>
+    <lastmod>2026-02-25T21:27:38+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
