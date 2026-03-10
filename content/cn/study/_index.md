@@ -5,6 +5,8 @@
 ## 统计学
 
 ## 经济学
+### 微观经济学
 
+### 宏观经济学
 ## 心理学
 1. 2025-12-26 [亲密关系](https://relationship-book.yalinliu.org/)
