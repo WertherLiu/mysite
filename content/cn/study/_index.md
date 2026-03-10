@@ -8,5 +8,8 @@
 ### 微观经济学
 
 ### 宏观经济学
+
+1. 2026-03-08 [IS-LM模型]({{< relref "IS_LM.md" >}})
+
 ## 心理学
 1. 2025-12-26 [亲密关系](https://relationship-book.yalinliu.org/)
