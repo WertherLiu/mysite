@@ -1,6 +1,6 @@
 ---
 title: "IS-LM曲线"
-slug: LIE
+slug: IS_LM
 date: 2026-03-10
 author: 刘亚林
 categories: ["经济学"]
