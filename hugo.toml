@@ -157,12 +157,5 @@ footnotereturnlinkcontents = "↩"
       url = "/study/"
       weight = 5
 
-    [[languages.cn.menu.main]]
-      name = "读书笔记"
-      url = "/books/intimate-relationships/"
-      weight = 6
-
-
-
     
 

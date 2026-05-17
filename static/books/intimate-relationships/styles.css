@@ -23,6 +23,13 @@ body {
   font-weight: 700;
 }
 
+.index-cover {
+  display: block;
+  width: min(100%, 520px);
+  margin: 0 auto 1.5rem;
+  border-radius: 4px;
+}
+
 .content p {
   line-height: 1.72;
 }
@@ -55,10 +62,10 @@ figcaption,
 .figure-caption {
   color: #5f6c7b;
   font-size: 0.92rem;
+  text-align: center;
 }
 
 .chapter-number,
 .header-section-number {
   color: var(--book-accent);
 }
-
