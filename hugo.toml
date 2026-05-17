@@ -109,6 +109,11 @@ footnotereturnlinkcontents = "↩"
       url = "/study/"
       weight = 5
 
+    [[languages.en.menu.main]]
+      name = "Book"
+      url = "/books/intimate-relationships/"
+      weight = 6
+
   [languages.cn]
     languageName = "中文"
     languageCode = "zh-cn"
@@ -152,6 +157,12 @@ footnotereturnlinkcontents = "↩"
       url = "/study/"
       weight = 5
 
+    [[languages.cn.menu.main]]
+      name = "读书笔记"
+      url = "/books/intimate-relationships/"
+      weight = 6
+
 
 
     
+

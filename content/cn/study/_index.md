@@ -12,4 +12,4 @@
 1. 2026-03-08 [IS-LM模型]({{< relref "IS_LM.md" >}})
 
 ## 心理学
-1. 2025-12-26 [亲密关系](https://relationship-book.yalinliu.org/)
+1. 2025-12-26 [亲密关系](https://yalinliu.org/books/intimate-relationships/)
