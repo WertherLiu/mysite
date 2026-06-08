@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1&nbsp; 货币的世代交叠模型 – 货币经济学课程笔记</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Chap2.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-f2c6d6e2b784ddc5de38779acc06f37d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chap1.html">课程笔记</a></li><li class="breadcrumb-item"><a href="./Chap1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">货币的世代交叠模型</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./assets/book-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./assets/book-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">货币经济学课程笔记</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">货币经济学课程笔记</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">课程笔记</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">货币的世代交叠模型</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">货币增长、铸币税与资产</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#自给自足经济" id="toc-自给自足经济" class="nav-link active" data-scroll-target="#自给自足经济"><span class="header-section-number">1.1</span> 自给自足经济</a></li>
+  <li><a href="#存在记录制度的经济" id="toc-存在记录制度的经济" class="nav-link" data-scroll-target="#存在记录制度的经济"><span class="header-section-number">1.2</span> 存在记录制度的经济</a></li>
+  <li><a href="#法定货币经济" id="toc-法定货币经济" class="nav-link" data-scroll-target="#法定货币经济"><span class="header-section-number">1.3</span> 法定货币经济</a></li>
+  <li><a href="#货币数量论与货币中性" id="toc-货币数量论与货币中性" class="nav-link" data-scroll-target="#货币数量论与货币中性"><span class="header-section-number">1.4</span> 货币数量论与货币中性</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chap1.html">课程笔记</a></li><li class="breadcrumb-item"><a href="./Chap1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">货币的世代交叠模型</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">货币的世代交叠模型</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>在前面的课程中，我们已经讨论过货币的基本职能。概括来说，货币主要有以下几种作用：</p>
+<ol type="1">
+<li><strong>价值尺度</strong>：货币作为衡量商品和服务价值的共同单位，使不同商品之间的价值可以比较。</li>
+<li><strong>流通手段</strong>：货币充当商品交换的媒介，买卖双方可以通过货币完成交易，从而避免以物易物的困难。</li>
+<li><strong>贮藏手段</strong>：货币可以储存购买力，使持有者把一部分财富保存到未来使用。</li>
+<li><strong>支付手段</strong>：货币可用于清偿债务、缴纳税款、支付工资等，并不一定直接对应当期商品交换。</li>
+<li><strong>世界货币</strong>：在国际贸易和金融活动中，某些货币可以作为国际支付手段和储备资产。</li>
+</ol>
+<p>其中，<strong>价值尺度</strong>和<strong>流通手段</strong>是货币最基本的两项职能；贮藏手段、支付手段和世界货币等职能，都是在此基础上进一步发展出来的。</p>
+<p>本章使用世代交叠模型（overlapping generations model, OLG）解释货币为什么可以有价值。核心问题是：如果商品本身不能储存，年轻人如何把资源转移到老年时期使用？我们会先考察自给自足经济，再引入记录制度，最后说明法定货币（fiat money）如何在没有记录制度时实现跨代资源转移。</p>
+<section id="自给自足经济" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="自给自足经济"><span class="header-section-number">1.1</span> 自给自足经济</h2>
+<p>考虑一个离散时间经济，时期为 <span class="math display">\[
+t=1,2,3,\ldots
+\]</span> 每个个体只存活两期：年轻期和老年期。第 <span class="math inline">\(t\)</span> 期出生的一代人在年轻时获得禀赋 <span class="math inline">\(y\)</span>，到第 <span class="math inline">\(t+1\)</span> 期变老且没有收入，第 <span class="math inline">\(t+2\)</span> 期离开经济。经济中还存在一组初始老人，他们只在第 <span class="math inline">\(1\)</span> 期生活。</p>
+<p>用 <span class="math inline">\(N_t\)</span> 表示第 <span class="math inline">\(t\)</span> 期年轻人的人数，并假设人口按固定比例增长： <span class="math display">\[
+N_t=nN_{t-1}.
+\]</span></p>
+<p>第 <span class="math inline">\(t\)</span> 期出生个体的生命周期效用为 <span class="math display">\[
+u(c_{1,t},c_{2,t+1}),
+\]</span> 其中 <span class="math inline">\(c_{1,t}\)</span> 表示年轻期消费，<span class="math inline">\(c_{2,t+1}\)</span> 表示老年期消费。假设效用函数递增、可微且严格凹。</p>
+<p>中央计划者选择每一代人的年轻期消费和老年期消费，以最大化代表性个体的生命周期效用： <span class="math display">\[
+\max_{c_1,c_2} u(c_1,c_2).
+\]</span></p>
+<p>第 <span class="math inline">\(t\)</span> 期的总资源约束为 <span class="math display">\[
+N_t c_{1,t}+N_{t-1}c_{2,t}\le N_t y.
+\]</span> 利用 <span class="math inline">\(N_t=nN_{t-1}\)</span>，可将约束写成每个年轻人的资源约束： <span class="math display">\[
+c_{1,t}+\frac{c_{2,t}}{n}\le y.
+\]</span></p>
+<p>在稳定配置中，记 <span class="math inline">\(c_{1,t}=c_1\)</span>、<span class="math inline">\(c_{2,t}=c_2\)</span>，则中央计划者面对的可行性约束为 <span class="math display">\[
+c_1+\frac{c_2}{n}\le y.
+\]</span></p>
+<p>在这个约束下使代表性世代福利最大化的配置称为<strong>黄金律配置（golden rule allocation）</strong>。直观地说，黄金律配置是在社会资源可行的前提下，让每一代人的生命周期福利达到最高的配置。</p>
+<p>但是，在自给自足经济（autarky）中，个体无法与其他代际进行交易，也不能把当期禀赋储存到未来。因此年轻人只能在年轻期消费全部禀赋，老年期没有消费： <span class="math display">\[
+c_{1,t}=y,\qquad c_{2,t+1}=0.
+\]</span></p>
+<p>这说明，如果商品不能储存且没有跨期交易机制，自给自足经济通常无法实现黄金律配置。问题的关键在于：社会需要某种制度，使年轻人愿意把一部分资源转移给当期老人，并在自己老年时从下一代年轻人那里获得资源。</p>
+</section>
+<section id="存在记录制度的经济" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="存在记录制度的经济"><span class="header-section-number">1.2</span> 存在记录制度的经济</h2>
+<p>先考虑一个理想情形：社会存在完美且无成本的记录制度（record keeping）。年轻人把商品转移给老人时，可以获得一条记录；这条记录证明他年轻时参与过代际转移。等他老了以后，下一代年轻人可以根据这条记录决定是否向他转移资源。</p>
+<p>设第 <span class="math inline">\(t\)</span> 期年轻人转移给老人的商品数量为 <span class="math inline">\(\Phi_t\)</span>。年轻期预算约束为 <span class="math display">\[
+c_{1,t}+\Phi_t\le y.
+\]</span> 这表示年轻人的禀赋 <span class="math inline">\(y\)</span> 可以用于两个用途：一部分自己消费 <span class="math inline">\(c_{1,t}\)</span>，另一部分转移给当期老人 <span class="math inline">\(\Phi_t\)</span>。</p>
+<p>到第 <span class="math inline">\(t+1\)</span> 期，该个体成为老人。设他老年时获得的转移为 <span class="math inline">\(\Phi^R_{t+1}\)</span>，则老年期预算约束为 <span class="math display">\[
+c_{2,t+1}\le \Phi^R_{t+1}.
+\]</span></p>
+<p>记录制度的作用，是把年轻期的“付出”和老年期的“获得”联系起来。如果没有记录制度，下一代无法知道某个人年轻时是否帮助过上一代老人，也就无法惩罚没有参与转移的人。有了记录制度，就可以形成激励：年轻时不转移资源的人，老年时也不能获得资源。</p>
+<p>假设年轻期支付的转移 <span class="math inline">\(\Phi_t\)</span> 与老年期获得的转移 <span class="math inline">\(\Phi^R_{t+1}\)</span> 之间存在转换率 <span class="math inline">\(x_{t+1}\)</span>： <span class="math display">\[
+\Phi_t x_{t+1}=\Phi^R_{t+1}.
+\]</span> 这里 <span class="math inline">\(x_{t+1}\)</span> 表示第 <span class="math inline">\(t\)</span> 期年轻人放弃一单位当期消费后，到第 <span class="math inline">\(t+1\)</span> 期老年时可以换回多少消费。</p>
+<p>由老年期约束和转换关系可得 <span class="math display">\[
+\Phi_t=\frac{c_{2,t+1}}{x_{t+1}}.
+\]</span> 代入年轻期预算约束，得到生命周期预算约束： <span class="math display">\[
+c_{1,t}+\frac{c_{2,t+1}}{x_{t+1}}\le y.
+\]</span></p>
+<p>这个式子的含义是：</p>
+<ul>
+<li><span class="math inline">\(c_{1,t}\)</span> 是年轻期消费；</li>
+<li><span class="math inline">\(\frac{c_{2,t+1}}{x_{t+1}}\)</span> 是为了获得老年期消费 <span class="math inline">\(c_{2,t+1}\)</span>，年轻时必须放弃的资源；</li>
+<li><span class="math inline">\(x_{t+1}\)</span> 越高，未来消费相对越便宜；</li>
+<li><span class="math inline">\(x_{t+1}\)</span> 越低，未来消费相对越昂贵。</li>
+</ul>
+<p>接下来考虑市场出清。第 <span class="math inline">\(t\)</span> 期老人来自第 <span class="math inline">\(t-1\)</span> 代，他们年轻时每人转移了 <span class="math inline">\(\Phi_{t-1}\)</span>。按照转换率 <span class="math inline">\(x_t\)</span>，每个老人现在可以获得 <span class="math display">\[
+x_t\Phi_{t-1}.
+\]</span> 第 <span class="math inline">\(t\)</span> 期老人总人数为 <span class="math inline">\(N_{t-1}\)</span>，所以老人要求获得的总转移为 <span class="math display">\[
+N_{t-1}x_t\Phi_{t-1}.
+\]</span></p>
+<p>另一方面，第 <span class="math inline">\(t\)</span> 期年轻人每人生产 <span class="math inline">\(y\)</span>，消费 <span class="math inline">\(c_{1,t}\)</span>，因此每人可以转移给老人的资源为 <span class="math display">\[
+y-c_{1,t}.
+\]</span> 第 <span class="math inline">\(t\)</span> 期年轻人总人数为 <span class="math inline">\(N_t\)</span>，所以转移供给总量为 <span class="math display">\[
+N_t(y-c_{1,t}).
+\]</span></p>
+<p>市场出清要求转移需求等于转移供给： <span class="math display">\[
+N_{t-1}x_t\Phi_{t-1}=N_t(y-c_{1,t}).
+\]</span> 因此， <span class="math display">\[
+x_t=\frac{N_t(y-c_{1,t})}{N_{t-1}\Phi_{t-1}}.
+\]</span></p>
+<p>在稳定状态下，<span class="math inline">\(\Phi_{t-1}=y-c_1\)</span>，且 <span class="math inline">\(N_t=nN_{t-1}\)</span>，所以 <span class="math display">\[
+x=n.
+\]</span> 于是分散经济中个体的生命周期预算约束变为 <span class="math display">\[
+c_1+\frac{c_2}{n}\le y.
+\]</span></p>
+<p>这与中央计划者的资源约束完全相同： <span class="math display">\[
+c_1+\frac{c_2}{n}\le y.
+\]</span></p>
+<p>因此，在偏好相同且记录制度完美的情形下，分散经济中个体面对的可行消费集合与中央计划者面对的可行集合一致。竞争性选择可以实现黄金律配置。结论是：<strong>完美记录制度可以实现有效的跨代资源转移。</strong></p>
+</section>
+<section id="法定货币经济" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="法定货币经济"><span class="header-section-number">1.3</span> 法定货币经济</h2>
+<p>如果记录制度不存在，或者记录成本过高，社会是否还能通过另一种制度实现跨代资源转移？法定货币提供了一种可能机制。</p>
+<p>假设经济中存在一种没有内在价值的法定货币。货币总供给固定，记为 <span class="math inline">\(M\)</span>，并且初始老人持有全部货币。初始老人虽然没有禀赋，但可以把货币卖给第 <span class="math inline">\(1\)</span> 期年轻人，从而获得商品消费。第 <span class="math inline">\(1\)</span> 期年轻人愿意接受货币，是因为他们相信自己老年时也能把货币卖给下一代年轻人。</p>
+<p>法定货币的价值具有自我实现性质。如果所有人都确定在某个未来时期 <span class="math inline">\(T\)</span>，货币完全没有价值，那么可以向前递推：</p>
+<ul>
+<li>如果第 <span class="math inline">\(T\)</span> 期货币没有价值；</li>
+<li>那么第 <span class="math inline">\(T-1\)</span> 期年轻人不会接受货币，因为他们老年时无法用货币换取消费；</li>
+<li>因而第 <span class="math inline">\(T-2\)</span> 期年轻人也不会接受货币；</li>
+<li>继续向前递推，今天的货币也不会有价值。</li>
+</ul>
+<p>相反，只要人们相信未来会有人接受货币，今天的货币就可以有正的价值。货币由此成为一种在代际之间转移资源的资产。</p>
+<p>定义实际货币余额（real balances）为 <span class="math display">\[
+q_t\equiv \nu_t m_t,
+\]</span> 其中：</p>
+<ul>
+<li><span class="math inline">\(m_t\)</span> 是个人持有的名义货币数量；</li>
+<li><span class="math inline">\(\nu_t\)</span> 是第 <span class="math inline">\(t\)</span> 期每一单位货币可以换得的商品数量，即货币的真实价值；</li>
+<li><span class="math inline">\(q_t\)</span> 是这笔货币对应的真实购买力。</li>
+</ul>
+<p>第 <span class="math inline">\(t\)</span> 期年轻人选择年轻期消费 <span class="math inline">\(c_{1,t}\)</span>、货币持有量 <span class="math inline">\(m_t\)</span> 和老年期消费 <span class="math inline">\(c_{2,t+1}\)</span>，以最大化生命周期效用： <span class="math display">\[
+\max_{c_{1,t},c_{2,t+1},m_t} u(c_{1,t},c_{2,t+1}).
+\]</span></p>
+<p>年轻期预算约束为 <span class="math display">\[
+c_{1,t}+\nu_t m_t\le y.
+\]</span> 这表示年轻人的禀赋 <span class="math inline">\(y\)</span> 可以用于当前消费，也可以用于购买货币。</p>
+<p>老年期预算约束为 <span class="math display">\[
+c_{2,t+1}\le \nu_{t+1}m_t.
+\]</span> 因为老年人没有禀赋，只能用年轻时持有的货币购买商品。</p>
+<p>将两条约束合并，得到生命周期预算约束： <span class="math display">\[
+c_{1,t}+\frac{\nu_t}{\nu_{t+1}}c_{2,t+1}\le y.
+\]</span> 其中 <span class="math display">\[
+\frac{\nu_{t+1}}{\nu_t}
+\]</span> 是货币的总真实回报率（gross real rate of return）。它表示今天用一单位商品买来的货币，到下一期可以换回多少商品。</p>
+<p>货币市场出清条件为 <span class="math display">\[
+\nu_t M_t=N_t(y-c_{1,t}).
+\]</span> 左边 <span class="math inline">\(\nu_t M_t\)</span> 是货币总供给的真实价值；右边 <span class="math inline">\(N_t(y-c_{1,t})\)</span> 是第 <span class="math inline">\(t\)</span> 期年轻人用于购买货币的商品总量。由市场出清可得 <span class="math display">\[
+\nu_t=\frac{N_t(y-c_{1,t})}{M_t}.
+\]</span></p>
+<p>这个式子说明，货币的真实价值取决于三个因素：</p>
+<ol type="1">
+<li>年轻人口 <span class="math inline">\(N_t\)</span>；</li>
+<li>每个年轻人的储蓄需求 <span class="math inline">\(y-c_{1,t}\)</span>；</li>
+<li>名义货币供给 <span class="math inline">\(M_t\)</span>。</li>
+</ol>
+<p>如果 <span class="math inline">\(M_t\)</span> 增加，而其他条件不变，则 <span class="math inline">\(\nu_t\)</span> 下降，也就是每单位货币能购买的商品减少。等价地，价格水平上升。</p>
+<p>一个货币均衡（monetary equilibrium）包括：</p>
+<ul>
+<li>消费路径 <span class="math inline">\(\{c_{1,t},c_{2,t+1}\}_{t=1}^{\infty}\)</span>；</li>
+<li>价格路径 <span class="math inline">\(\{p_t\}_{t=1}^{\infty}\)</span>；</li>
+<li>对所有 <span class="math inline">\(t\)</span>，都有 <span class="math inline">\(p_t&lt;\infty\)</span>；</li>
+<li>个体在给定价格下最优化；</li>
+<li>所有市场出清。</li>
+</ul>
+<p>条件 <span class="math inline">\(p_t&lt;\infty\)</span> 很重要。价格水平 <span class="math inline">\(p_t\)</span> 与货币真实价值 <span class="math inline">\(\nu_t\)</span> 的关系为 <span class="math display">\[
+p_t=\frac{1}{\nu_t}.
+\]</span> 因此，<span class="math inline">\(p_t&lt;\infty\)</span> 等价于 <span class="math inline">\(\nu_t&gt;0\)</span>，也就是货币具有正的真实价值。如果 <span class="math inline">\(\nu_t=0\)</span>，则 <span class="math inline">\(p_t=\infty\)</span>，货币无法购买任何商品，此时经济退化为自给自足状态，而不是货币均衡。</p>
+<p>稳定货币均衡（stationary monetary equilibrium）是货币均衡的特殊情形。在稳定货币均衡中，真实配置不随时间变化： <span class="math display">\[
+(c_{1,t},c_{2,t+1})=(c_1,c_2).
+\]</span> 需要注意的是，稳定性主要指真实配置不变，并不要求名义价格 <span class="math inline">\(p_t\)</span> 必须保持不变。</p>
+<p>由货币市场出清条件可得 <span class="math display">\[
+\nu_t=\frac{N_t(y-c_{1,t})}{M_t}.
+\]</span> 因此货币真实回报率为 <span class="math display">\[
+\frac{\nu_{t+1}}{\nu_t}
+=
+\frac{N_{t+1}(y-c_{1,t+1})/M_{t+1}}
+{N_t(y-c_{1,t})/M_t}.
+\]</span> 在稳定货币均衡中，<span class="math inline">\(c_{1,t+1}=c_{1,t}=c_1\)</span>，所以 <span class="math inline">\(y-c_1\)</span> 抵消，得到 <span class="math display">\[
+\frac{\nu_{t+1}}{\nu_t}
+=
+\frac{N_{t+1}/M_{t+1}}{N_t/M_t}.
+\]</span></p>
+<p>这说明货币回报率取决于人口增长和货币供给增长。如果货币供给固定，即 <span class="math inline">\(M_{t+1}=M_t\)</span>，且人口增长率为 <span class="math display">\[
+n=\frac{N_{t+1}}{N_t},
+\]</span> 则 <span class="math display">\[
+\frac{\nu_{t+1}}{\nu_t}=n.
+\]</span></p>
+<p>于是年轻人的生命周期预算约束变为 <span class="math display">\[
+c_1+\frac{c_2}{n}\le y.
+\]</span> 这与中央计划者的资源约束完全一致。因此，在固定货币供给下，法定货币可以复制记录制度的跨代转移功能，使竞争均衡实现黄金律配置。</p>
+</section>
+<section id="货币数量论与货币中性" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="货币数量论与货币中性"><span class="header-section-number">1.4</span> 货币数量论与货币中性</h2>
+<p>在稳定货币均衡中，如果真实配置不变，则 <span class="math display">\[
+\nu=\frac{N(y-c_1)}{M}.
+\]</span> 价格水平是货币真实价值的倒数： <span class="math display">\[
+p=\frac{1}{\nu}.
+\]</span> 因此， <span class="math display">\[
+p=\frac{M}{N(y-c_1)}.
+\]</span></p>
+<p>这说明，在 <span class="math inline">\(N\)</span>、<span class="math inline">\(y\)</span> 和 <span class="math inline">\(c_1\)</span> 不变时，价格水平 <span class="math inline">\(p\)</span> 与货币供给 <span class="math inline">\(M\)</span> 成正比。也就是说，如果货币供给翻倍，价格水平也会翻倍： <span class="math display">\[
+M\uparrow \quad \Rightarrow \quad p\uparrow.
+\]</span></p>
+<p>这就是货币数量论（quantity theory of money）的核心结论。</p>
+<p>不过，在这个模型中，货币是中性的（money is neutral）。原因是均衡真实消费配置 <span class="math inline">\((c_1,c_2)\)</span> 不依赖于名义货币供给 <span class="math inline">\(M\)</span>。货币供给变化只改变价格水平 <span class="math inline">\(p\)</span>，不改变真实消费分配： <span class="math display">\[
+M \text{ changes } p,\text{ but not } (c_1,c_2).
+\]</span></p>
+<p>换言之，名义变量会随货币供给变化而变化，但真实配置保持不变。这正是本模型中货币中性的含义。</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="货币经济学课程笔记">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">货币经济学课程笔记</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Chap2.html" class="pagination-link" aria-label="货币增长、铸币税与资产">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">货币增长、铸币税与资产</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
