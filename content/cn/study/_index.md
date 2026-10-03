@@ -17,5 +17,8 @@
 ## 心理学
 1. 2025-12-26 [亲密关系](https://yalinliu.org/books/intimate-relationships/)
 
+## 文学
+1. 2026-10-03 [从卡夫卡到昆德拉](/books/western-literature/)
+
 ## 书籍模板
 1. 2026-10-03 [Quarto 中文书籍模板](/books/quarto-book-template/)（[下载模板源码](/templates/quarto-book-template.zip)）
