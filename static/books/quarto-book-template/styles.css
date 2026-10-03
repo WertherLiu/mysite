@@ -1,0 +1,28 @@
+:root {
+  --book-accent: #245b86;
+  --book-soft: #eef5fa;
+}
+
+body {
+  line-height: 1.75;
+}
+
+.sidebar-title {
+  font-weight: 700;
+}
+
+.content p,
+.content li {
+  line-height: 1.75;
+}
+
+.content blockquote {
+  border-left: 3px solid var(--book-accent);
+  background: var(--book-soft);
+  padding: 0.5rem 1rem;
+}
+
+.chapter-number,
+.header-section-number {
+  color: var(--book-accent);
+}
