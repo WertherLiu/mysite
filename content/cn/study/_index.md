@@ -6,7 +6,7 @@
 
 ## 经济学
 
-1. 2026-06-08 [货币经济学课程笔记](https://yalinliu.org/books/monetary-economics/)
+1. 2026-06-08 [Money and Banking（货币经济学课程笔记）](https://yalinliu.org/books/monetary-economics/)
 
 ### 微观经济学
 

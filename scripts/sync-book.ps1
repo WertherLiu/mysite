@@ -2,11 +2,13 @@
 [CmdletBinding()]
 param(
     [string]$Source,
-    [Parameter(Mandatory)][ValidatePattern('^[a-z0-9]+(-[a-z0-9]+)*$')][string]$BookId
+    [Parameter(Mandatory)][ValidatePattern('^[a-z0-9]+(-[a-z0-9]+)*$')][string]$BookId,
+    [string]$AssetBaseUrl
 )
 
 $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path $PSScriptRoot -Parent
+$registry = $null
 if ([string]::IsNullOrWhiteSpace($Source)) {
     $registryPath = Join-Path $repoRoot 'books.local.json'
     if (-not (Test-Path -LiteralPath $registryPath)) { throw 'Provide -Source or register the book in books.local.json.' }
@@ -14,6 +16,17 @@ if ([string]::IsNullOrWhiteSpace($Source)) {
     if (-not $registry.ContainsKey($BookId)) { throw "No source registered for book: $BookId" }
     $Source = $registry[$BookId].source
     if ([string]::IsNullOrWhiteSpace($Source)) { throw "Empty source for book: $BookId" }
+}
+# Source manuscripts keep relative image paths; published HTML can use an R2 prefix.
+if ([string]::IsNullOrWhiteSpace($AssetBaseUrl) -and $null -ne $registry) {
+    $AssetBaseUrl = $registry[$BookId].assetBaseUrl
+}
+if (-not [string]::IsNullOrWhiteSpace($AssetBaseUrl)) {
+    $assetUri = [uri]$AssetBaseUrl
+    if (-not $assetUri.IsAbsoluteUri -or $assetUri.Scheme -ne 'https' -or $assetUri.Query -or $assetUri.Fragment -or $assetUri.UserInfo) {
+        throw 'AssetBaseUrl must be an absolute HTTPS URL without credentials, query, or fragment.'
+    }
+    $AssetBaseUrl = $assetUri.AbsoluteUri.TrimEnd('/') + '/'
 }
 $sourceRoot = (Resolve-Path -LiteralPath $Source).Path
 if (-not (Test-Path -LiteralPath (Join-Path $sourceRoot '_quarto.yml'))) {
@@ -46,6 +59,35 @@ try {
 $output = Join-Path $staging '_publish'
 if (-not (Test-Path -LiteralPath (Join-Path $output 'index.html'))) {
     throw 'No index.html in generated output; the website has not been changed.'
+}
+if (-not [string]::IsNullOrWhiteSpace($AssetBaseUrl)) {
+    $assetRoot = [IO.Path]::GetFullPath((Join-Path $output 'assets'))
+    $attributePattern = '(?i)(?<start>\b(?:src|href)\s*=\s*["''])(?<url>[^"'']+)(?<end>["''])'
+    $rewrittenCount = 0
+    foreach ($htmlFile in Get-ChildItem -LiteralPath $output -Filter '*.html' -Recurse -File) {
+        $html = [IO.File]::ReadAllText($htmlFile.FullName)
+        $rewritten = [regex]::Replace($html, $attributePattern, {
+            param($match)
+            $url = $match.Groups['url'].Value
+            if ($url -match '^(?:[a-z][a-z0-9+.-]*:|//|#)') { return $match.Value }
+            $parts = [regex]::Match($url, '^(?<path>[^?#]+)(?<tail>[?#].*)?$')
+            if (-not $parts.Success) { return $match.Value }
+            $localPath = [uri]::UnescapeDataString($parts.Groups['path'].Value).Replace('/', [IO.Path]::DirectorySeparatorChar)
+            $resolved = [IO.Path]::GetFullPath($localPath, $htmlFile.DirectoryName)
+            if (-not $resolved.StartsWith($assetRoot + [IO.Path]::DirectorySeparatorChar, [StringComparison]::OrdinalIgnoreCase)) {
+                return $match.Value
+            }
+            if (-not (Test-Path -LiteralPath $resolved -PathType Leaf)) { throw "Missing published asset: $resolved" }
+            $relative = [IO.Path]::GetRelativePath($assetRoot, $resolved).Replace('\', '/')
+            $encoded = (($relative -split '/') | ForEach-Object { [uri]::EscapeDataString($_) }) -join '/'
+            return $match.Groups['start'].Value + $AssetBaseUrl + $encoded + $parts.Groups['tail'].Value + $match.Groups['end'].Value
+        })
+        if ($rewritten -cne $html) {
+            [IO.File]::WriteAllText($htmlFile.FullName, $rewritten, [Text.UTF8Encoding]::new($false))
+            $rewrittenCount++
+        }
+    }
+    Write-Host "Mapped assets to $AssetBaseUrl in $rewrittenCount HTML pages."
 }
 $booksRoot = [IO.Path]::GetFullPath((Join-Path $repoRoot 'static/books'))
 $target = [IO.Path]::GetFullPath((Join-Path $booksRoot $BookId))

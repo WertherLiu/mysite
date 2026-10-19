@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>7&nbsp; Micro-Prudential Banking Regulation – Money and Banking</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Chap8.html" rel="next">
+<link href="./Chap6.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-f2c6d6e2b784ddc5de38779acc06f37d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chap1.html">Central Banks and the Banking System</a></li><li class="breadcrumb-item"><a href="./Chap7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Micro-Prudential Banking Regulation</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="https://assets.yalinliu.org/Books/Money/assets/book-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="https://assets.yalinliu.org/Books/Money/assets/book-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Money and Banking</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">货币经济学课程笔记</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Central Banks and the Banking System</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Banks and Financial Intermediation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Liquidity and Solvency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Central Banks</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The Fed and the ECB</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Banking Crises</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Incentive Problems in Banking</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap7.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Micro-Prudential Banking Regulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Macro-Prudential Policies</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Monetary Policy</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Money Supply</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Monetarism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">How Central Banks Set Interest Rates: The Federal Reserve</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">How Central Banks Set Interest Rates: The ECB</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Long-Term Interest Rates: Bonds and the Expectations Theory</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">More on Long-Term Interest Rates: Term Premia, Risk Premia and Collateral</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Quantitative Easing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Phillips Curve: Evidence and Implications</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Real Interest Rates and the Taylor Rule</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Exchange Rate Regimes and the Euro</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap18.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Exchange Rate Regimes and the Euro</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Euro Crisis</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#basel-accord" id="toc-basel-accord" class="nav-link active" data-scroll-target="#basel-accord"><span class="header-section-number">7.1</span> Basel Accord</a></li>
+  <li><a href="#basel-ii" id="toc-basel-ii" class="nav-link" data-scroll-target="#basel-ii"><span class="header-section-number">7.2</span> Basel II</a>
+  <ul class="collapse">
+  <li><a href="#irb" id="toc-irb" class="nav-link" data-scroll-target="#irb"><span class="header-section-number">7.2.1</span> IRB</a></li>
+  <li><a href="#var" id="toc-var" class="nav-link" data-scroll-target="#var"><span class="header-section-number">7.2.2</span> VaR</a></li>
+  </ul></li>
+  <li><a href="#risks-and-problems-with-capital-requirements" id="toc-risks-and-problems-with-capital-requirements" class="nav-link" data-scroll-target="#risks-and-problems-with-capital-requirements"><span class="header-section-number">7.3</span> Risks and Problems with Capital Requirements</a>
+  <ul class="collapse">
+  <li><a href="#非对称风险" id="toc-非对称风险" class="nav-link" data-scroll-target="#非对称风险"><span class="header-section-number">7.3.1</span> 非对称风险</a></li>
+  <li><a href="#监管问题" id="toc-监管问题" class="nav-link" data-scroll-target="#监管问题"><span class="header-section-number">7.3.2</span> 监管问题</a></li>
+  </ul></li>
+  <li><a href="#post-crisis-banking-regulation" id="toc-post-crisis-banking-regulation" class="nav-link" data-scroll-target="#post-crisis-banking-regulation"><span class="header-section-number">7.4</span> Post-Crisis Banking Regulation</a>
+  <ul class="collapse">
+  <li><a href="#流动性改革" id="toc-流动性改革" class="nav-link" data-scroll-target="#流动性改革"><span class="header-section-number">7.4.1</span> 流动性改革</a></li>
+  <li><a href="#too-big-to-fail" id="toc-too-big-to-fail" class="nav-link" data-scroll-target="#too-big-to-fail"><span class="header-section-number">7.4.2</span> Too Big to Fail</a></li>
+  <li><a href="#分离存款业务和高风险投资" id="toc-分离存款业务和高风险投资" class="nav-link" data-scroll-target="#分离存款业务和高风险投资"><span class="header-section-number">7.4.3</span> 分离存款业务和高风险投资</a></li>
+  <li><a href="#basel-iv" id="toc-basel-iv" class="nav-link" data-scroll-target="#basel-iv"><span class="header-section-number">7.4.4</span> Basel IV</a></li>
+  </ul></li>
+  <li><a href="#should-banks-have-more-capital" id="toc-should-banks-have-more-capital" class="nav-link" data-scroll-target="#should-banks-have-more-capital"><span class="header-section-number">7.5</span> Should Banks Have More Capital?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chap1.html">Central Banks and the Banking System</a></li><li class="breadcrumb-item"><a href="./Chap7.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Micro-Prudential Banking Regulation</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Micro-Prudential Banking Regulation</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>micro-prudential</strong>，意思是监管目标主要放在<strong>单个银行是否稳健</strong>，而不是整个金融体系的系统性风险。后者通常叫 <strong>macro-prudential regulation，宏观审慎监管</strong>。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>类型</th>
+<th>关注对象</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>微观审慎监管</td>
+<td>单个银行</td>
+<td>防止单个银行倒闭或过度冒险</td>
+</tr>
+<tr class="even">
+<td>宏观审慎监管</td>
+<td>整个金融系统</td>
+<td>防止系统性危机、金融传染和整体不稳定</td>
+</tr>
+</tbody>
+</table>
+<p>微观审慎的重点是 <strong>资本充足率规则</strong>，即要求银行持有足够资本，避免资产规模相对于资本过大，也就是避免过度杠杆。让银行有足够“缓冲垫”吸收损失，保护存款人和高级债权人。</p>
+<section id="basel-accord" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="basel-accord"><span class="header-section-number">7.1</span> Basel Accord</h2>
+<p>银行业务是全球性的，如果各国监管规则差异太大，会导致监管套利。例如银行可能把业务转移到监管更宽松的国家。因此，从 1988 年 <strong>Basel Accord，巴塞尔协议</strong> 开始，国际银行监管形成了共同框架。</p>
+<ol type="1">
+<li><strong>BIS，Bank for International Settlements，国际清算银行</strong> 它位于瑞士巴塞尔，被称为“央行的央行”。</li>
+<li><strong>Basel accords 是原则，不是法律</strong> 巴塞尔协议本身不是直接适用于各国银行的法律，而是一套国际监管原则。各国需要把这些原则转化为本国法律。</li>
+<li><strong>欧盟中的实施方式</strong> 欧盟通过资本要求指令，例如 CRD IV，将巴塞尔原则转化为成员国法律。</li>
+<li><strong>欧洲央行的监管角色</strong> 从 2015 年起，ECB 成为欧元区银行的单一监管者。它不仅检查银行是否遵守资本规则，也可以评估银行治理结构、风险文化，甚至撤销银行牌照。</li>
+</ol>
+<p>Basel 框架把可吸收损失的资本分为两类：</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 36%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>类型</th>
+<th>内容</th>
+<th>风险承担程度</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tier 1 capital</td>
+<td>普通股权益资本、高度次级债</td>
+<td>更先吸收损失，风险更高</td>
+</tr>
+<tr class="even">
+<td>Tier 2 capital</td>
+<td>其他次级债务</td>
+<td>也能吸收损失，但风险承担程度较低</td>
+</tr>
+</tbody>
+</table>
+<p><strong>监管资本 = Tier 1 capital + Tier 2 capital</strong></p>
+<p>其中 Tier 1 capital 更重要，因为它更接近真正意义上的银行自有资本。</p>
+<p>Basel 的逻辑是：<strong>资产越风险，银行越需要更多资本。</strong>所以不是简单要求银行资本等于总资产的某个比例，而是先把资产按照风险加权，得到 <strong>RWA，risk-weighted assets，风险加权资产</strong>。</p>
+<p>早期 Basel I 把资产分为几个风险权重：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>资产类型</th>
+<th>风险权重</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>OECD 国家政府债务</td>
+<td>0%</td>
+</tr>
+<tr class="even">
+<td>抵押贷款</td>
+<td>50%</td>
+</tr>
+<tr class="odd">
+<td>大多数公司债</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<p>资本要求包括：</p>
+<ol type="1">
+<li>总监管资本至少等于 RWA 的 8%；</li>
+<li>其中至少一半必须是 Tier 1 capital；</li>
+<li>Tier 1 capital 中至少一半应是普通股权益，即 common equity 或 core Tier 1。</li>
+</ol>
+<p>但原始 Basel I 的风险分类太粗糙。同一个“风险桶”内部，不同资产的真实风险可能差别很大。例如同样是公司债，AAA 评级和普通高风险公司债显然不应使用相同权重。</p>
+<div id="fig-ch07-01" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch07-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part7/fig-07-01.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch07-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: Bank of Ireland regulatory capital and capital ratios.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="basel-ii" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="basel-ii"><span class="header-section-number">7.2</span> Basel II</h2>
+<p>Basel II 的主要变化有三点：</p>
+<ol type="1">
+<li><strong>风险桶更细</strong> 根据评级机构评级区分风险，例如 AAA 债务风险权重低于 AA 债务。</li>
+<li><strong>允许大银行使用内部评级法 IRB</strong> IRB 是 Internal Ratings Based approach，即银行用自己的风险模型评估资产风险。</li>
+<li><strong>抵押贷款被认为比 Basel I 假设的更低风险</strong></li>
+</ol>
+<p>Basel II 让资本要求更贴近真实风险，但即使 Basel II 完全实施，也无法阻止 2008 年全球金融危机，甚至可能让情况更糟。为了说明Basel II的缺陷。</p>
+<section id="irb" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="irb"><span class="header-section-number">7.2.1</span> IRB</h3>
+<p>IRB 是 Basel II 中允许大银行使用的一种<strong>内部模型方法</strong>。它的目标不是处理银行“正常情况下已经预期到的损失”，而是确保银行有足够资本来应对<strong>意外损失</strong>。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 24%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>区域</th>
+<th>含义</th>
+<th>应对方式</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Expected loss</td>
+<td>预期损失</td>
+<td>正常经营成本，应通过 provisioning 覆盖</td>
+</tr>
+<tr class="even">
+<td>Unexpected loss</td>
+<td>意外损失</td>
+<td>应由资本缓冲吸收</td>
+</tr>
+<tr class="odd">
+<td>Stress loss</td>
+<td>压力损失/极端损失</td>
+<td>可能超出资本承受能力，导致资不抵债</td>
+</tr>
+</tbody>
+</table>
+<p>例如，如果银行预期某类贷款中有 1% 会无法收回，那么这 1% 应该一开始就通过<strong>贷款损失准备 provisioning</strong> 从贷款价值中扣除，而不是依靠资本来吸收。</p>
+<p>IRB 的核心逻辑是：用统计模型构造“非常糟糕但可能发生”的情景，然后根据这些情景计算资产的风险权重，再由风险加权资产 <span class="math inline">\(RWA\)</span> 推出资本要求。也就是说，资本要求不再简单取决于资产类别，而是更精细地取决于模型估计出来的风险水平。但监管者不能完全让银行自由选择模型，因为银行有动机通过模型设定来压低风险权重，从而降低资本要求。因此 Basel 2 规定了模型框架，银行可以选择部分参数，但底层模型结构由监管规则提供。</p>
+<p>对大多数银行而言，最主要的风险是<strong>信用风险</strong>，即借款人无法偿还贷款。IRB 方法从银行自身历史数据和统计模型出发，为每笔贷款估计三个关键参数：PD、LGD 和 EAD。</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 41%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>参数</th>
+<th>含义</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PD</td>
+<td>Probability of Default，违约概率</td>
+<td>借款人在一定时间内违约的概率，通常是一年内</td>
+</tr>
+<tr class="even">
+<td>LGD</td>
+<td>Loss Given Default，违约损失率</td>
+<td>一旦违约，银行预计损失的贷款比例</td>
+</tr>
+<tr class="odd">
+<td>EAD</td>
+<td>Exposure at Default，违约风险暴露</td>
+<td>违约发生时银行面临风险的贷款金额</td>
+</tr>
+</tbody>
+</table>
+<p>然后，IRB 根据这些参数计算每笔贷款的风险权重，并由此得到风险加权资产：</p>
+<p><span class="math display">\[
+RWA = EAD \times Risk\ Weight
+\]</span></p>
+<p>最低资本要求为：</p>
+<p><span class="math display">\[
+Capital\ Requirement = 0.08 \times RWA
+\]</span></p>
+<div id="fig-ch07-02" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch07-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part7/fig-07-02.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch07-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.2: Credit loss distribution: expected, unexpected and stress losses.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="var" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="var"><span class="header-section-number">7.2.2</span> VaR</h3>
+<p>除了信用风险，银行还面临<strong>市场风险</strong>，即可交易证券如股票、债券等因市场价格波动而发生损失。VaR 的逻辑是估计银行投资组合损失的概率分布。</p>
+<p>这里使用的核心工具是 <strong>Value-at-Risk，VaR，风险价值</strong>。VaR 衡量的是：在给定持有期和置信水平下，银行交易组合可能遭受的最大预期损失。例如，10天持有期、99%置信水平下的 VaR 可以理解为：</p>
+<blockquote class="blockquote">
+<p>在正常模型假设下，有 99% 的概率，未来10天损失不会超过这个数值；但仍有 1% 的概率损失会超过它。</p>
+</blockquote>
+<p>例如，如果银行的每周 VaR 是 5000 万美元，意思是：在未来一周内，只有 1% 的概率损失会超过 5000 万美元。</p>
+<p>注意VaR 不告诉你最坏情况下会损失多少，它只告诉你某个概率分位点。</p>
+<p>银行通常使用市场价格、波动率和相关性等历史数据来计算 VaR。Basel 对 VaR 计算设定统一框架，包括：通常使用10天持有期、99%置信水平、至少一年历史市场数据，并要求进行压力测试。</p>
+<p>银行需要根据交易账户的 VaR 计算市场风险资本要求。资本要求取以下两者中的较高者：</p>
+<ol type="1">
+<li>最近一期 VaR，也就是 current-day VaR；</li>
+<li>过去60个交易日每日 VaR 的加权平均值，即 average VaR；</li>
+</ol>
+<p>然后再乘以监管设定的 scaling factor，通常为 3。</p>
+<p>监管者还要求银行进行 <strong>backtesting 回溯检验</strong>，即比较模型预测的 VaR 与实际交易损失。如果银行模型持续低估风险，监管者可以施加额外惩罚或提高资本乘数。此外，Basel 还要求银行在普通 VaR 之外补充 <strong>Stressed VaR，sVaR</strong>，用来衡量历史高压力时期，如高波动、相关性失效时期，可能发生的损失。最终市场风险资本要求由 VaR 和 sVaR 共同构成。</p>
+</section>
+</section>
+<section id="risks-and-problems-with-capital-requirements" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="risks-and-problems-with-capital-requirements"><span class="header-section-number">7.3</span> Risks and Problems with Capital Requirements</h2>
+<p>VaR 在理论上简单，但实际操作中问题很多。主要有两个问题：</p>
+<ol type="1">
+<li>估计样本问题：VaR 通常基于历史数据估计损失分布。但历史样本不一定代表未来。例如 2005—2007 年金融市场看起来很平稳，如果银行只用这段数据估计风险，会得出很低的 VaR。但 2008 年危机马上爆发，说明这些估计严重低估了风险。</li>
+<li>尾部风险问题：VaR 只关心某个分位点，比如 99% 分位点，却不关心最坏 1% 情况下究竟会损失多少。金融市场常常有 <strong>fat tails，厚尾分布</strong>，极端损失发生频率高于正态分布预测。因此，用正常分布估计 VaR 很可能低估危机中的真实损失。</li>
+</ol>
+<p>瑞士央行前行长Philipp Hildebrand 对 Basel II 的批评</p>
+<blockquote class="blockquote">
+<p>While sensible, the higher risk sensitivity of Basel II comes at a price. First, banks and supervisors alike incur significant operational costs to implement the new, highly complex regulation. Second, but in my view more importantly, Basel II creates new risks: Risks about risk assessments. I am tempted to call them the unknowable unknowns. Under Basel II, we increase our dependence on risk models. What if we didn’t pick the correct models? What if the data used to calibrate these models turn out to be of poor quality? What if the models were correct in the past, but the future is different? What if certain tail events simply cannot be modelled? These are all important considerations that we have to keep in mind when we interpret the risk figures from complex models. As it turns out, to view the model outputs as a true representation of reality has proven to be a grave mistake.”</p>
+</blockquote>
+<p>因此过度相信复杂模型是一种严重错误。监管不能只依赖银行内部模型。</p>
+<p>Northern Rock的例子进一步说明 Basel II 的问题。Northern Rock 在 2007 年6月30日的报告说：</p>
+<blockquote class="blockquote">
+<p>The implementation of Basel II results in our Pillar I risk weighted assets at 30 June 2007 falling from around £33.9 billion under Basel I to £18.9 billion under Basel II, a reduction of some 44%. The risk weighting for our residential mortgages reduces to mid-teens %, treasury assets to around half of Basel I requirements, also around mid teens %, reflecting the low risk nature of these portfolios and personal unsecured loans to slightly below Basel I requirements.</p>
+</blockquote>
+<p>这意味着在 Basel II 下，银行被认为风险更低，因此所需资本减少。管理层甚至认为这是好消息，并提高股息。但几个月后，Northern Rock 陷入严重危机，最终被国有化。</p>
+<p>这个案例说明：<strong>模型计算出的低风险不一定是真实低风险。资本要求下降可能反而鼓励银行增加分红、提高杠杆，而不是增强稳健性。</strong></p>
+<div id="fig-ch07-03" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch07-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part7/fig-07-03.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch07-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.3: Risk-based capital ratios of surviving and failed major global banks, end-2006.
+</figcaption>
+</figure>
+</div>
+<section id="非对称风险" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="非对称风险"><span class="header-section-number">7.3.1</span> 非对称风险</h3>
+<p><strong>Asymmetric risk positions，非对称风险头寸</strong>指这样一种资产：</p>
+<ul>
+<li>大多数时候产生小额稳定收益；</li>
+<li>极少数时候产生巨大损失。</li>
+</ul>
+<p>我们看下边两个例子：</p>
+<section id="选择-a普通风险投资" class="level4" data-number="7.3.1.1">
+<h4 data-number="7.3.1.1" class="anchored" data-anchor-id="选择-a普通风险投资"><span class="header-section-number">7.3.1.1</span> 选择 A：普通风险投资</h4>
+<p>每天可能赚 10 万，也可能亏 10 万。收益波动比较明显。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>情况</th>
+<th>概率</th>
+<th>收益</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>正常上涨</td>
+<td>50%</td>
+<td>+10 万</td>
+</tr>
+<tr class="even">
+<td>正常下跌</td>
+<td>50%</td>
+<td>-10 万</td>
+</tr>
+</tbody>
+</table>
+<p>这种投资的损失经常出现，所以 VaR 很容易捕捉到风险。银行模型会发现：这个资产经常亏钱，风险不低。</p>
+</section>
+<section id="选择-b非对称风险投资" class="level4" data-number="7.3.1.2">
+<h4 data-number="7.3.1.2" class="anchored" data-anchor-id="选择-b非对称风险投资"><span class="header-section-number">7.3.1.2</span> 选择 B：非对称风险投资</h4>
+<p>大多数时候赚小钱，极少数时候亏巨款。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>情况</th>
+<th>概率</th>
+<th>收益</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>正常情况</td>
+<td>99.5%</td>
+<td>+10 万</td>
+</tr>
+<tr class="even">
+<td>灾难情况</td>
+<td>0.5%</td>
+<td>-1 亿</td>
+</tr>
+</tbody>
+</table>
+<p>现在看起来非常诱人：</p>
+<ul>
+<li>99.5% 的时候都赚钱；</li>
+<li>日常收益非常稳定；</li>
+<li>历史数据里可能很少出现亏损；</li>
+<li>VaR 可能显示风险很低。</li>
+</ul>
+<p>但真正的问题是：一旦进入那 0.5% 的灾难状态，亏损不是 10 万，而是 1 亿。</p>
+<p>而银行为了激励经理人，可能不仅奖励他们赚钱，还奖励他们“低风险地赚钱”。例如奖金规则可能是：</p>
+<p><span class="math display">\[
+奖金 = 利润 / VaR
+\]</span></p>
+<p>因为银行希望员工不是单纯追求利润，而是追求风险调整后的利润。在这种情况下，经理人就有动机选择看起来 VaR 很低但实际上有巨大尾部风险的头寸。典型例子是信用违约互换 CDS credit-default swap。可以把 CDS 理解成一种针对债券违约的保险。</p>
+<ul>
+<li>平时债券不违约，收取小额保费；看起来收益稳定、风险很低；</li>
+<li>但一旦金融危机爆发，大规模违约同时发生，损失巨大。</li>
+</ul>
+<p>VaR 可能看不到这种极端尾部损失，因为它只关注 99% 以内的情况，而忽略最坏 1% 情况中损失规模有多大。AIG 在危机前大量出售 MBS 相关 CDS，最后陷入破产并由美国政府救助，这就是典型例子。</p>
+<p>UBS 在2008年的经济危机中，由于持有了大量美国次贷 MBS 而遭受巨大损失。</p>
+<p>Patrick Honohan 对 UBS 的分析：</p>
+<blockquote class="blockquote">
+<p>Most of UBS’s losses relate to their portfolio of MBS, many of which were being warehoused for sale to other entities. Evidently, the mark-to-market value of these assets fell sharply during 2007. In broad terms, what appears to have happened in respect of at least some of the losses is that insurance and derivatives were bought to hedge only the amount of variation (known to the traders) to which the portfolio was being stress-tested. Market fluctuations larger than envisaged in the stress test were not hedged (otherwise the profit potential of the positions being taken would have been eliminated).</p>
+<p>In other words, the profits being booked (in the relevant parts of the business) arose primarily because of – and were the reward for – the assumption of catastrophic risk outside that envisaged in the stress test.</p>
+<p>Senior management understood that certain units were taking large positions, but they assumed that the risk models were good enough to protect against serious loss. Perhaps they would have been good enough if not gamed, but they were not perfect, and that they were gamed was perhaps inevitable.</p>
+</blockquote>
+<p>因此<strong>风险模型不仅可能不完美，而且可能被内部人员利用。</strong></p>
+</section>
+</section>
+<section id="监管问题" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="监管问题"><span class="header-section-number">7.3.2</span> 监管问题</h3>
+<p>在 Basel II 下，监管者不只是看银行资产，还要：</p>
+<ol type="1">
+<li>检查银行的风险暴露；</li>
+<li>评估复杂的内部风险模型；</li>
+<li>判断模型使用的数据质量；</li>
+<li>理解模型假设和输出。</li>
+</ol>
+<p>这对监管者来说非常困难，尤其是监管者资源有限，而大型银行模型极其复杂。所以 Basel II 的一个副作用是：<strong>监管变得更加依赖银行自己的模型，外部监管者反而更难判断真实风险。</strong></p>
+<p>Andrew Haldane 和 Vasileios Madouros 的著名文章 <strong>The Dog and the Frisbee</strong>批评了越来越复杂的监管规则：</p>
+<blockquote class="blockquote">
+<p>Catching a frisbee is difficult. Doing so successfully requires the catcher to weigh a complex array of physical and atmospheric factors, among them wind speed and frisbee rotation. Were a physicist to write down frisbee-catching as an optimal control problem, they would need to understand and apply Newton’s Law of Gravity.</p>
+<p>Yet despite this complexity, catching a frisbee is remarkably common. Casual empiricism reveals that it is not an activity only undertaken by those with a Doctorate in physics. It is a task that an average dog can master. Indeed some, such as border collies, are better at frisbee-catching than humans.</p>
+<p>So what is the secret of the dog’s success? The answer, as in many other areas of complex decisionmaking, is simple. Or rather, it is to keep it simple. For studies have shown that the frisbee-catching dog follows the simplest of rules of thumb: run at a speed so that the angle of gaze to the frisbee remains roughly constant</p>
+</blockquote>
+<p>因此，应该重新重视简单、标准化、数量型监管规则。但不能认为简单规则一定总是更好。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>监管方式</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>复杂风险模型</td>
+<td>更风险敏感，但容易模型错误、数据错误、被操纵</td>
+</tr>
+<tr class="even">
+<td>简单数量规则</td>
+<td>不够精细，但更透明、更难操纵</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="post-crisis-banking-regulation" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="post-crisis-banking-regulation"><span class="header-section-number">7.4</span> Post-Crisis Banking Regulation</h2>
+<p>2008 年金融危机后形成 Basel III。Basel III 的主要内容包括：</p>
+<ol type="1">
+<li><strong>正常时期 common equity requirement 为 7%</strong> 也就是更重视普通股权益资本。</li>
+<li><strong>资本保护缓冲 capital conservation buffer 为 2.5%</strong> 在压力时期可以动用，但正常时期银行应保持额外资本。</li>
+<li><strong>逆周期资本缓冲 countercyclical buffer 为 0—2.5%</strong> 当信贷过度增长、系统风险累积时，监管者可以要求银行持有更多资本。</li>
+<li><strong>更严格的资本定义</strong> 例如对养老金缺口等项目进行更多扣除。</li>
+<li><strong>最大杠杆率限制</strong> 即限制未加权资产相对于资本的比例，用来弥补过度依赖风险模型的问题。</li>
+</ol>
+<p>Basel III 不只是提高资本要求，也加入了宏观审慎色彩，例如逆周期缓冲。</p>
+<p>除资本监管之外的，还有其他改革。</p>
+<div id="fig-ch07-04" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch07-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part7/fig-07-04.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch07-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.4: Capital requirements under Basel II/Basel 2.5 and Basel III.
+</figcaption>
+</figure>
+</div>
+<section id="流动性改革" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="流动性改革"><span class="header-section-number">7.4.1</span> 流动性改革</h3>
+<p>Basel III 引入：</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>指标</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Liquidity Coverage Ratio, LCR</td>
+<td>银行在压力情景下应能承受 30 天资金流出</td>
+</tr>
+<tr class="even">
+<td>Net Stable Funding Requirement, NSFR</td>
+<td>银行应有足够稳定资金支持一年期资产和业务活动</td>
+</tr>
+</tbody>
+</table>
+<p>这说明危机后监管不只关注资本，也关注流动性。</p>
+</section>
+<section id="too-big-to-fail" class="level3" data-number="7.4.2">
+<h3 data-number="7.4.2" class="anchored" data-anchor-id="too-big-to-fail"><span class="header-section-number">7.4.2</span> Too Big to Fail</h3>
+<p>Basel Committee 识别出 28 家全球系统重要性银行，即 G-SIBs。这些银行如果倒闭会威胁全球经济，因此要持有额外 Tier 1 capital，范围大约 1%—2.5%。</p>
+<p><strong>Financial Stability Board，FSB，金融稳定委员会</strong>。它成立于2009年，由 G20 国家推动设立，任务是负责国际金融监管协调。2015年11月，FSB 对所有 G-SIBs 提出了 TLAC 标准，Total Loss-Absorbing Capacity，总损失吸收能力。TLAC 是指在 G-SIBs 进入处置程序时，可以迅速用于 bail-in 的工具和负债的最低要求。TLAC 的核心思想是：系统重要性银行即使倒闭，也应有足够可以被 bail-in 的债务和资本来吸收损失，而不是由纳税人救助。</p>
+<p>关键要求：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>时间</th>
+<th>TLAC / RWA 要求</th>
+<th>TLAC / 非风险加权资产要求</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2019 年起</td>
+<td>至少 16%</td>
+<td>至少 6%</td>
+</tr>
+<tr class="even">
+<td>2022 年起</td>
+<td>至少 18%</td>
+<td>至少 6.75%</td>
+</tr>
+</tbody>
+</table>
+<p>注意：已经用于满足监管资本要求的普通股权益不能重复计入 TLAC。</p>
+</section>
+<section id="分离存款业务和高风险投资" class="level3" data-number="7.4.3">
+<h3 data-number="7.4.3" class="anchored" data-anchor-id="分离存款业务和高风险投资"><span class="header-section-number">7.4.3</span> 分离存款业务和高风险投资</h3>
+<p>美国 Dodd-Frank Act 中的 <strong>Volcker Rule</strong> 限制存款机构进行自营交易。英国则引入 <strong>ring-fencing</strong>，把大银行的存款业务和金融交易业务隔离开。</p>
+</section>
+<section id="basel-iv" class="level3" data-number="7.4.4">
+<h3 data-number="7.4.4" class="anchored" data-anchor-id="basel-iv"><span class="header-section-number">7.4.4</span> Basel IV</h3>
+<p>2017 年后的一轮改革，常被非正式称为 <strong>Basel IV</strong>。</p>
+<p>主要改革包括：</p>
+<ol type="1">
+<li><strong>修订标准法 standardised approach</strong> 使风险权重更细。例如抵押贷款风险权重取决于 LTV，loan-to-value ratio，贷款价值比。</li>
+<li><strong>限制高级 IRB 方法使用范围</strong> 某些资产类别不能完全依赖银行内部模型，例如大型企业、银行、其他金融机构敞口。</li>
+<li><strong>Output floor，输出下限</strong> 银行用内部模型计算的 RWA 不能过低。最终 RWA 至少要达到标准法计算结果的 72.5%。</li>
+<li><strong>提高操作风险资本要求</strong></li>
+</ol>
+<p>这些改革会使给定资本下的资本比率下降，因为 RWA 被提高了。因此银行可能面临更大增资压力。</p>
+</section>
+</section>
+<section id="should-banks-have-more-capital" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="should-banks-have-more-capital"><span class="header-section-number">7.5</span> Should Banks Have More Capital?</h2>
+<p>一个常常讨论的问题是，银行资本要求是否应该更高？</p>
+<p>支持高资本的理由很直接：</p>
+<ul>
+<li>单个银行更不容易倒闭；</li>
+<li>金融系统更稳定；</li>
+<li>危机中损失更容易由股东吸收，而不是存款人或政府。</li>
+</ul>
+<p>银行家通常反对更高资本要求，原因之一是高杠杆能提高股东回报率。更严肃的反对意见是：权益融资成本高于债务融资，所以更高资本要求会提高银行整体融资成本，进而提高贷款利率。</p>
+<p>但这种说法是有问题的。Admati 和 Hellwig 在 <em>The Bankers’ New Clothes</em> 中的观点认为，更高资本要求不一定会显著提高银行整体融资成本。</p>
+<ol type="1">
+<li>更高股权资本降低每单位股权风险：如果银行权益资本翻倍，同样一笔损失对每单位股权的冲击会更小。因此股东要求的风险补偿也应下降。</li>
+<li>更高资本也降低债务风险。银行更安全，债权人面临违约风险更低，因此债务融资成本可能下降。</li>
+<li>Modigliani-Miller 定理根据 MM 定理，企业整体融资成本主要取决于资产风险，而不是债务和股权融资结构。当然现实中 MM 定理有税收、存款保险、政府隐性担保等偏离，但它用于批评“股权更贵所以总体融资成本一定上升”的简单论证。</li>
+</ol>
+<p>资本比率有用，但不能完全信任。原因包括：</p>
+<ol type="1">
+<li><strong>资本依赖资产估值</strong> 如果资产价值被高估，资本也会被高估。</li>
+<li><strong>危机中资产价值会迅速下降</strong> 资本比率可能在危机前看起来不错，但危机中迅速恶化。</li>
+<li><strong>风险加权资本比率未必预测银行失败</strong> Haldane 和 Madouros 认为，危机前的监管资本比率并没有很好地区分哪些银行会失败，简单杠杆率反而预测力稍强。</li>
+<li><strong>Banco Popular 案例</strong> Banco Popular 在 2016 年通过 EBA 压力测试，并显示资本充足，但 2017 年进入 resolution。</li>
+</ol>
+<p>监管者不能只看公开资本比率，还必须收集其他信息，例如资产质量、流动性、融资结构、治理和风险文化等。</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Chap6.html" class="pagination-link" aria-label="Incentive Problems in Banking">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Incentive Problems in Banking</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Chap8.html" class="pagination-link" aria-label="Macro-Prudential Policies">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Macro-Prudential Policies</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

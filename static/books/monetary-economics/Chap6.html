@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6&nbsp; Incentive Problems in Banking – Money and Banking</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Chap7.html" rel="next">
+<link href="./Chap5.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-f2c6d6e2b784ddc5de38779acc06f37d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chap1.html">Central Banks and the Banking System</a></li><li class="breadcrumb-item"><a href="./Chap6.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Incentive Problems in Banking</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="https://assets.yalinliu.org/Books/Money/assets/book-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="https://assets.yalinliu.org/Books/Money/assets/book-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Money and Banking</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">货币经济学课程笔记</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Central Banks and the Banking System</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Banks and Financial Intermediation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Liquidity and Solvency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Central Banks</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The Fed and the ECB</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Banking Crises</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap6.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Incentive Problems in Banking</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Micro-Prudential Banking Regulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Macro-Prudential Policies</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Monetary Policy</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Money Supply</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Monetarism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">How Central Banks Set Interest Rates: The Federal Reserve</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">How Central Banks Set Interest Rates: The ECB</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Long-Term Interest Rates: Bonds and the Expectations Theory</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">More on Long-Term Interest Rates: Term Premia, Risk Premia and Collateral</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Quantitative Easing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Phillips Curve: Evidence and Implications</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Real Interest Rates and the Taylor Rule</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Exchange Rate Regimes and the Euro</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap18.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Exchange Rate Regimes and the Euro</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Euro Crisis</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#example" id="toc-example" class="nav-link active" data-scroll-target="#example"><span class="header-section-number">6.1</span> Example</a>
+  <ul class="collapse">
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"><span class="header-section-number">6.1.1</span> Getting Started</a></li>
+  <li><a href="#the-income-statement" id="toc-the-income-statement" class="nav-link" data-scroll-target="#the-income-statement"><span class="header-section-number">6.1.2</span> The Income Statement</a></li>
+  <li><a href="#expanding-the-business" id="toc-expanding-the-business" class="nav-link" data-scroll-target="#expanding-the-business"><span class="header-section-number">6.1.3</span> Expanding the Business</a></li>
+  <li><a href="#credit-risk" id="toc-credit-risk" class="nav-link" data-scroll-target="#credit-risk"><span class="header-section-number">6.1.4</span> Credit Risk</a></li>
+  </ul></li>
+  <li><a href="#comparison-aggressive-and-conservative" id="toc-comparison-aggressive-and-conservative" class="nav-link" data-scroll-target="#comparison-aggressive-and-conservative"><span class="header-section-number">6.2</span> Comparison: Aggressive and Conservative</a></li>
+  <li><a href="#incentives-of-bank-shareholders-and-ceos" id="toc-incentives-of-bank-shareholders-and-ceos" class="nav-link" data-scroll-target="#incentives-of-bank-shareholders-and-ceos"><span class="header-section-number">6.3</span> Incentives of Bank Shareholders and CEOs</a>
+  <ul class="collapse">
+  <li><a href="#incentives-to-take-excessive-risk-in-lending-or-investment" id="toc-incentives-to-take-excessive-risk-in-lending-or-investment" class="nav-link" data-scroll-target="#incentives-to-take-excessive-risk-in-lending-or-investment"><span class="header-section-number">6.3.1</span> Incentives to Take Excessive Risk in Lending or Investment</a></li>
+  <li><a href="#incentives-to-rely-on-short-term-debt" id="toc-incentives-to-rely-on-short-term-debt" class="nav-link" data-scroll-target="#incentives-to-rely-on-short-term-debt"><span class="header-section-number">6.3.2</span> Incentives to Rely on Short-Term Debt</a></li>
+  <li><a href="#incentives-to-be-too-big" id="toc-incentives-to-be-too-big" class="nav-link" data-scroll-target="#incentives-to-be-too-big"><span class="header-section-number">6.3.3</span> Incentives to be Too Big</a></li>
+  <li><a href="#incentive-problems-with-mbs" id="toc-incentive-problems-with-mbs" class="nav-link" data-scroll-target="#incentive-problems-with-mbs"><span class="header-section-number">6.3.4</span> Incentive Problems with MBS</a></li>
+  </ul></li>
+  <li><a href="#the-need-for-regulation" id="toc-the-need-for-regulation" class="nav-link" data-scroll-target="#the-need-for-regulation"><span class="header-section-number">6.4</span> The Need for Regulation</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chap1.html">Central Banks and the Banking System</a></li><li class="breadcrumb-item"><a href="./Chap6.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Incentive Problems in Banking</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Incentive Problems in Banking</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Why do banks get into trouble sometimes?</p>
+<p>Our traditional image of a banker is of someone who is very conservative and risk-averse. Can’t we rely on the self-interest of conservative bankers to ensure that most banks maintain sufficient equity capital and that bank failure will be a rare event?</p>
+<p>The answer is no. It turns out that the incentives of bank management can lead them to take risks that sometimes end up getting their banks into trouble.</p>
+<p>We start by discussing how the personal financial incentives of bank executives can lead them to run banks that are too leveraged (i.e.&nbsp;too little equity capital relative to assets), have too many risky investments, and have too much short-term non-deposit funding.</p>
+<p>In the language of microeconomics, the bankers do not take into account the <strong>negative externalities</strong> generated by their behaviour. Negative externalities of this sort are a classic example of when government intervention can improve economic outcomes. In this case, there is an argument for government regulation of the banking sector.</p>
+<section id="example" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="example"><span class="header-section-number">6.1</span> Example</h2>
+<p>We’ve discussed how banking works via a simple balance sheet listing assets and liabilities. To better understand how banks work, we’re going to go through a little exercise in which we imagine setting up a bank and figuring out what a bank CEO gets up to.</p>
+<p>Let’s start with the assumption that the bank is founded by a bunch of investors who have €10 million. Then they hire you to run the bank for them. They expect you to make as much money for them on their investment as you can. Let’s see how it goes.</p>
+<section id="getting-started" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">6.1.1</span> Getting Started</h3>
+<p>First thing you do is spend €1 million of your investors’ money on a retail branch network which can start to take in deposits. To attract depositors, you offer to pay 1% interest on deposits. Customers appear at the branches and next thing you know, you’ve got €50 million in deposits.</p>
+<p>Flush with €59 million in non-property assets, you decide to use €50 million to make loans with an interest rate of 5% and you keep €9 million in cash and reserves (i.e.&nbsp;your account at the central bank).</p>
+<p>Here’s how your balance sheet looks now (all figures in millions):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 28%">
+<col style="width: 21%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Assets (Uses of Funds)</th>
+<th style="text-align: right;">€ million</th>
+<th>Liabilities (Sources of Funds)</th>
+<th style="text-align: right;">€ million</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cash and Reserves</td>
+<td style="text-align: right;">9</td>
+<td>Deposits</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="even">
+<td>Loans</td>
+<td style="text-align: right;">50</td>
+<td>Equity Capital</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="odd">
+<td>Branch Network Buildings</td>
+<td style="text-align: right;">1</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>60</strong></td>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>60</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="the-income-statement" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="the-income-statement"><span class="header-section-number">6.1.2</span> The Income Statement</h3>
+<p>Now you’re in business. And like any other business, you have revenues and you have costs.</p>
+<p>You have two types of revenues. Interest income of €2.5 million—5% of your €50 million in loans—and €1 million in fees from services offered by your branches.</p>
+<p>However, you had to pay out interest of €0.5 million and the branch network costs €1.5 million to run.</p>
+<p>Now you issue an Income Statement to your investors.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Revenues</th>
+<th style="text-align: right;">€ million</th>
+<th>Costs</th>
+<th style="text-align: right;">€ million</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interest Income</td>
+<td style="text-align: right;">2.5</td>
+<td>Interest Paid</td>
+<td style="text-align: right;">0.5</td>
+</tr>
+<tr class="even">
+<td>Fees</td>
+<td style="text-align: right;">1.0</td>
+<td>Branch Network</td>
+<td style="text-align: right;">1.5</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>3.5</strong></td>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>2.0</strong></td>
+</tr>
+</tbody>
+</table>
+<p>So, you’ve made profit of €1.5 million. Congratulations!</p>
+<p>Your investors gave you €10 million and you made €1.5 million profit. Thus, you delivered a <strong>Return on Equity (ROE)</strong> of <strong>15%</strong>. This is the key performance measure your investors will be watching.</p>
+<div id="fig-ch06-01" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch06-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part6/fig-06-01.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch06-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1: Bank of Ireland Income Statement (2024 and 2023).
+</figcaption>
+</figure>
+</div>
+<div id="fig-ch06-02" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch06-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part6/fig-06-02.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch06-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.2: Bank of Ireland return on tangible equity (2024 and 2023).
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="expanding-the-business" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="expanding-the-business"><span class="header-section-number">6.1.3</span> Expanding the Business</h3>
+<p>What do you do with your €1.5 million of profit income?</p>
+<p>You decide to pay €0.5 million back to your investors in dividends and use the other €1 million (retained earnings) to make more loans.</p>
+<p>You also observe that there are opportunities to make more loans than your deposits and equity capital would allow, so you decide to issue €20 million in debt securities to raise funds to make these loans.</p>
+<p>Now your balance sheet looks like this:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 28%">
+<col style="width: 21%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Assets (Uses of Funds)</th>
+<th style="text-align: right;">€ million</th>
+<th>Liabilities (Sources of Funds)</th>
+<th style="text-align: right;">€ million</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cash and Reserves</td>
+<td style="text-align: right;">9</td>
+<td>Deposits</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="even">
+<td>Loans</td>
+<td style="text-align: right;">71</td>
+<td>Debt Securities</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="odd">
+<td>Branch Network Buildings</td>
+<td style="text-align: right;">1</td>
+<td>Equity Capital</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>81</strong></td>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>81</strong></td>
+</tr>
+</tbody>
+</table>
+<p>From here on, your goal is to expand the business and deliver a steady supply of dividends.</p>
+</section>
+<section id="credit-risk" class="level3" data-number="6.1.4">
+<h3 data-number="6.1.4" class="anchored" data-anchor-id="credit-risk"><span class="header-section-number">6.1.4</span> Credit Risk</h3>
+<p>But there’s a problem. Sometimes people don’t pay you back!</p>
+<p>Suppose, for instance, that €5 million of your new loans of €21 million went to a dodgy property developer who went bankrupt and couldn’t pay you back.</p>
+<p>Now your balance sheet looks like this:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 28%">
+<col style="width: 21%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Assets (Uses of Funds)</th>
+<th style="text-align: right;">€ million</th>
+<th>Liabilities (Sources of Funds)</th>
+<th style="text-align: right;">€ million</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cash and Reserves</td>
+<td style="text-align: right;">9</td>
+<td>Deposits</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="even">
+<td>Loans</td>
+<td style="text-align: right;">66</td>
+<td>Debt Securities</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="odd">
+<td>Branch Network Buildings</td>
+<td style="text-align: right;">1</td>
+<td>Equity Capital</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>76</strong></td>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>76</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Your assets only exceed deposits and debts by €6 million now.</p>
+<p>Note the risky nature of equity capital. Your investors get dividends when you make profits but they are the first to lose their money if you make bad loans. Depositors and debt-holders have first claim for getting their money back. So you need to be very careful in assessing the credit risk on your loans.</p>
+</section>
+</section>
+<section id="comparison-aggressive-and-conservative" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="comparison-aggressive-and-conservative"><span class="header-section-number">6.2</span> Comparison: Aggressive and Conservative</h2>
+<p>Suppose you start up a bank with €10 million in equity capital. You pay 2% on deposits, charge 3% on your loans, and reserve requirements are 10% of deposits.</p>
+<p>Consider now the following two cases. In the first case, you raise €90 million in deposits giving you the following balance sheet:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 28%">
+<col style="width: 21%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Assets (Uses of Funds)</th>
+<th style="text-align: right;">€ million</th>
+<th>Liabilities (Sources of Funds)</th>
+<th style="text-align: right;">€ million</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cash and Reserves</td>
+<td style="text-align: right;">9</td>
+<td>Deposits</td>
+<td style="text-align: right;">90</td>
+</tr>
+<tr class="even">
+<td>Loans</td>
+<td style="text-align: right;">91</td>
+<td>Equity Capital</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>100</strong></td>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>100</strong></td>
+</tr>
+</tbody>
+</table>
+<p>In the second case, you are more aggressive raising funds. You also borrow €100 million from international money markets, again at 2% interest, giving you the following balance sheet:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 28%">
+<col style="width: 21%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Assets (Uses of Funds)</th>
+<th style="text-align: right;">€ million</th>
+<th>Liabilities (Sources of Funds)</th>
+<th style="text-align: right;">€ million</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cash and Reserves</td>
+<td style="text-align: right;">9</td>
+<td>Deposits</td>
+<td style="text-align: right;">90</td>
+</tr>
+<tr class="even">
+<td>Loans</td>
+<td style="text-align: right;">191</td>
+<td>Borrowings</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td style="text-align: right;"></td>
+<td>Equity Capital</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>200</strong></td>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>200</strong></td>
+</tr>
+</tbody>
+</table>
+<p>What profits do you make in these two cases?</p>
+<ul>
+<li><p>Case 1: Profits = <span class="math inline">\(0.03(91)-0.02(90)=2.73-1.8=0.93\)</span>. Your Return on Equity is 9.3%.</p></li>
+<li><p>Case 2: Profits = <span class="math inline">\(0.03(191)-0.02(190)=5.73-3.8=1.93\)</span>. Your Return on Equity is 19.3%.</p></li>
+</ul>
+<p>The second case, with the lower capital-assets ratio, produces profits and thus a higher return on equity.</p>
+<p>The capital-assets ratio is often discussed in reverse terms, as the assets-capital ratio, which is called the <strong>leverage ratio</strong>.</p>
+<ul>
+<li><p>In Case 1, equity capital was 10% of total assets, so the leverage ratio was 10.</p></li>
+<li><p>In Case 2, equity capital was 5% of total assets, so the leverage ratio was 20.</p></li>
+</ul>
+<p>Clearly, the more highly-leveraged bank is taking on greater risk. It has more credit risk (more loans that could go bad) and more liquidity risk (funds from international money markets could dry up if things go wrong). But it also makes more profits.</p>
+</section>
+<section id="incentives-of-bank-shareholders-and-ceos" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="incentives-of-bank-shareholders-and-ceos"><span class="header-section-number">6.3</span> Incentives of Bank Shareholders and CEOs</h2>
+<p>These calculations show why we can’t rely on bankers self-interest to maintain sufficient capital to protect against losses. The higher credit and liquidity risk means higher bank profits.</p>
+<p>There are two different elements to consider here:</p>
+<p><strong>Investor Incentives:</strong> People differ in how much risk they are willing to take. Shareholders of a highly-leveraged bank may be willing to accept a risk of losing all their money in return for a high return most of the time. Maybe by the time the bank blows up, they will have made a nice return from all the dividends the bank has paid back.</p>
+<p><strong>Bank CEO Incentives:</strong> Even if the bank’s shareholders don’t want to take on a lot of risk, there are strong incentives for bank CEOs to operate with high leverage. Profit-linked bonuses are very important for senior bank management, so they want to maximize profits today. If the bank blows up next year, they don’t have to pay the bonuses back. So they have an incentive to take big risks while pretending to shareholders that they are being prudent.</p>
+<section id="incentives-to-take-excessive-risk-in-lending-or-investment" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="incentives-to-take-excessive-risk-in-lending-or-investment"><span class="header-section-number">6.3.1</span> Incentives to Take Excessive Risk in Lending or Investment</h3>
+<p>We have seen how banks may be incentivised to have too much leverage. For a given amount of equity, a bank with more assets will generally deliver a higher return on equity. For bank CEOs, the higher returns from more leverage may matter more than the smaller probability that credit or liquidity risks bring down the bank.</p>
+<p>Similar arguments apply to risky lending or investments. Consider an investment that has a ninety percent probability of delivering a 50% return and a 10% probability of losing all your money. A banker who takes on this risk will generally do well and may earn good bonuses. Occasionally, however, his bank will become insolvent. He may decide it’s worth the gamble.</p>
+<p>Sometimes bankers get into trouble because everyone believes a certain type of investment (technology stocks, housing) is a “one-way bet” and only realise too late that they are wrong.</p>
+<p>Why don’t the bankers question the prevailing wisdom? Often, the money being made is just too good. Also, recall Keynes’s comment:</p>
+<blockquote class="blockquote">
+<p>“A ‘sound’ banker, alas! is not one who foresees danger and avoids it, but one who, when he is ruined, is ruined in a conventional and orthodox way along with his fellows, so that no one can really blame him.”</p>
+</blockquote>
+</section>
+<section id="incentives-to-rely-on-short-term-debt" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="incentives-to-rely-on-short-term-debt"><span class="header-section-number">6.3.2</span> Incentives to Rely on Short-Term Debt</h3>
+<p>By September 2007, it was clear that some major banks were going to incur large losses that would threaten their solvency. Many of them had funded their operations with very short-term borrowing, which began to flow out.</p>
+<p>See paper by Diamond and Rajan:</p>
+<blockquote class="blockquote">
+<p>“Given the complexity of bank risk-taking, and the potential breakdown in internal control processes, investors would have demanded a very high premium for financing the bank long term. By contrast, they would have been far more willing to hold short-term claims on the bank, since that would give them the option to exit – or get a higher premium – if the bank appeared to be getting into trouble.” In other words, they took this option because it was cheap.</p>
+</blockquote>
+<p>Vanity Fair article on Bear Stearns</p>
+<blockquote class="blockquote">
+<p>“By midafternoon the dam was breaking. One by one, repo lenders began to jump ship. As word spread of the withdrawals, still more repo lenders turned tail …. A full $30 billion or so of repo loans would not be rolled over the next morning. They might be able to replace maybe half that in the next day’s market, but that would still leave Bear $15 billion short of what it needed to make it through the day … By four o’clock the firm’s reserves, which had been $18 billion that Monday, had dwindled to almost nothing.”</p>
+</blockquote>
+<div id="fig-ch06-03" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch06-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part6/fig-06-03.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch06-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.3: Bear Stearns’ Cash Holdings, February 22–March 13, 2008 (billions of dollars).
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="incentives-to-be-too-big" class="level3" data-number="6.3.3">
+<h3 data-number="6.3.3" class="anchored" data-anchor-id="incentives-to-be-too-big"><span class="header-section-number">6.3.3</span> Incentives to be Too Big</h3>
+<p>Previously, we discussed the idea of systemic risk, i.e.&nbsp;how a bank may be perceived as “too big to fail” because its failure can bring down the whole financial system.</p>
+<p>This provides an incentive for banks to grow bigger in size over time: The bigger they are, the more likely the state will intervene to save them if things go wrong. In addition to being highly leveraged (high ratio of assets to equity) this can also be achieved by taking over other banks or seeking new equity investments.</p>
+<p>In 2009 paper from November 2009 titled “Banking on the State” Piergiorgio Alessandri and Andrew Haldane of the Bank of England documented how banking sectors had grown in size relative to the economy, had become more leveraged and less liquid, and had engaged in more risky trading activities.</p>
+<p>Some quotes from the paper are on the next few pages.</p>
+<blockquote class="blockquote">
+<p>“Gains to shareholders are potentially unlimited. But the same is not true in bad states of the world. The reason is limited liability. That constrains the losses of shareholders to around zero. Losses beyond that point are borne by other parts of banks’ capital structure - wholesale and retail depositors. Therein lies the problem. If protection of depositors is felt to be a public good, these losses instead risk being borne by the state, either in the form of equity injections from the government (capital insurance), payouts to retail depositors (deposit insurance) or liquidity support to wholesale funders (liquidity insurance). The gains risk being privatised and the losses socialised. Evidence suggests this is a repeated historical pattern.”</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>“Socialised losses are doubly bad for society. Taxes may not only be higher on average. They may also need to rise when they are likely to be most painful to taxpayers, namely in the aftermath of crisis. So taxes profiles will be spiky rather than smooth and will spike when the chips are down.”</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>“So far, so bad. But it is about to get worse, for this tells only half the story. This is a repeated game. State support stokes future risk-taking incentives, as owners of banks adapt their strategies to maximise expected profits. So it was in the run-up to the present crisis.”</p>
+</blockquote>
+<p>Alessandri and Haldane: The Doom Loop</p>
+<blockquote class="blockquote">
+<p>“These strategies are the latest incarnation of efforts by the banking system to boost shareholder returns and, whether by accident or design, game the state. For the authorities, it poses a dilemma. Ex-ante, they may well say ‘never again’. But the ex-post costs of crisis mean such a statement lacks credibility. Knowing this, the rational response by market participants is to double their bets. This adds to the cost of future crises. And the larger these costs, the lower the credibility of ‘never again’ announcements. This is a doom loop.”</p>
+</blockquote>
+</section>
+<section id="incentive-problems-with-mbs" class="level3" data-number="6.3.4">
+<h3 data-number="6.3.4" class="anchored" data-anchor-id="incentive-problems-with-mbs"><span class="header-section-number">6.3.4</span> Incentive Problems with MBS</h3>
+<p>We described before how poorly performing subprime mortgage-backed securities (MBS) played a key role in the global financial crisis of 2008/09. This crisis was partly due to various parties having incentives that aligned badly with the MBS being of good quality.</p>
+<p><strong>Appraisers:</strong> Many mortgages came with reports appraising the properties as having higher value than they were worth. The banks making the loans (the originators) wanted reports showing the houses had high value (to make the loan-to-value ratios lower, so the mortgage seemed safer). So to keep getting business, appraisers inflated valuations.</p>
+<p><strong>Originators:</strong> The banks that made the original loans would then sell these mortgage assets to the underwriters, large investment banks that would bundle the mortgages together and create the MBS. They made money off fees from the originators and cared about those fees, not whether the mortgages were poor quality.</p>
+<p><strong>Underwriters:</strong> They made money from selling the MBS to investors and did not always care much about the quality of the product.</p>
+<p><strong>Ratings Agencies:</strong> These got paid by the underwriters and so they had incentives to claim the MBS were safer than they actually were.</p>
+</section>
+</section>
+<section id="the-need-for-regulation" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="the-need-for-regulation"><span class="header-section-number">6.4</span> The Need for Regulation</h2>
+<p>We have seen how, left to make their own decisions, bankers will chose to take too much risk. This means that banking crises are not just unfortunate accidents that are an unhappy by-product of the fractional reserve banking system.</p>
+<p>Rather, most banking crises stem from bankers making decisions that prioritise their short-run profits over the long-run stability of the banking system and the economy. This means that banks need to be regulated by the government.</p>
+<p>We will discuss banking regulation next.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Chap5.html" class="pagination-link" aria-label="Banking Crises">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Banking Crises</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Chap7.html" class="pagination-link" aria-label="Micro-Prudential Banking Regulation">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Micro-Prudential Banking Regulation</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

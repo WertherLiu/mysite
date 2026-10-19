@@ -62,3 +62,17 @@ figcaption,
   color: var(--book-accent);
 }
 
+
+/* Consistent manuscript figures, tables and pending image captions. */
+.content img { max-width: 100%; height: auto; }
+.content figure { margin: 1.5rem auto; }
+.content table { font-variant-numeric: tabular-nums; }
+.missing-image {
+  border: 1px dashed var(--book-border);
+  border-radius: 6px;
+  color: #5f6c7b;
+  font-size: 0.92rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  text-align: center;
+}

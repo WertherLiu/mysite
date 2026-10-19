@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>16&nbsp; The Phillips Curve: Evidence and Implications – Money and Banking</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Chap17.html" rel="next">
+<link href="./Chap15.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-f2c6d6e2b784ddc5de38779acc06f37d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chap9.html">Monetary Policy</a></li><li class="breadcrumb-item"><a href="./Chap16.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Phillips Curve: Evidence and Implications</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="https://assets.yalinliu.org/Books/Money/assets/book-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="https://assets.yalinliu.org/Books/Money/assets/book-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Money and Banking</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">货币经济学课程笔记</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Central Banks and the Banking System</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Banks and Financial Intermediation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Liquidity and Solvency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Central Banks</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The Fed and the ECB</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Banking Crises</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Incentive Problems in Banking</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Micro-Prudential Banking Regulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Macro-Prudential Policies</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Monetary Policy</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Money Supply</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Monetarism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">How Central Banks Set Interest Rates: The Federal Reserve</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">How Central Banks Set Interest Rates: The ECB</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Long-Term Interest Rates: Bonds and the Expectations Theory</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">More on Long-Term Interest Rates: Term Premia, Risk Premia and Collateral</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Quantitative Easing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap16.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Phillips Curve: Evidence and Implications</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Real Interest Rates and the Taylor Rule</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Exchange Rate Regimes and the Euro</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap18.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Exchange Rate Regimes and the Euro</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Euro Crisis</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#central-banks-and-economic-conditions" id="toc-central-banks-and-economic-conditions" class="nav-link active" data-scroll-target="#central-banks-and-economic-conditions"><span class="header-section-number">16.1</span> Central Banks and Economic Conditions</a></li>
+  <li><a href="#phillips-curve" id="toc-phillips-curve" class="nav-link" data-scroll-target="#phillips-curve"><span class="header-section-number">16.2</span> Phillips curve</a></li>
+  <li><a href="#the-expectations-augmented-phillips-curve" id="toc-the-expectations-augmented-phillips-curve" class="nav-link" data-scroll-target="#the-expectations-augmented-phillips-curve"><span class="header-section-number">16.3</span> The Expectations-Augmented Phillips Curve</a></li>
+  <li><a href="#the-demise-of-the-basic-phillips-curve" id="toc-the-demise-of-the-basic-phillips-curve" class="nav-link" data-scroll-target="#the-demise-of-the-basic-phillips-curve"><span class="header-section-number">16.4</span> The Demise of the Basic Phillips Curve</a></li>
+  <li><a href="#the-accelerationist-phillips-curve" id="toc-the-accelerationist-phillips-curve" class="nav-link" data-scroll-target="#the-accelerationist-phillips-curve"><span class="header-section-number">16.5</span> The Accelerationist Phillips Curve</a>
+  <ul class="collapse">
+  <li><a href="#supply-shocks" id="toc-supply-shocks" class="nav-link" data-scroll-target="#supply-shocks"><span class="header-section-number">16.5.1</span> Supply Shocks</a></li>
+  <li><a href="#the-natural-rate-of-unemployment" id="toc-the-natural-rate-of-unemployment" class="nav-link" data-scroll-target="#the-natural-rate-of-unemployment"><span class="header-section-number">16.5.2</span> The <strong>natural rate of unemployment</strong></a></li>
+  <li><a href="#tradeoffs-offered-by-the-accelerationist-phillips-curve" id="toc-tradeoffs-offered-by-the-accelerationist-phillips-curve" class="nav-link" data-scroll-target="#tradeoffs-offered-by-the-accelerationist-phillips-curve"><span class="header-section-number">16.5.3</span> Tradeoffs Offered by the Accelerationist Phillips Curve</a></li>
+  <li><a href="#implications-for-central-bank-institutional-design" id="toc-implications-for-central-bank-institutional-design" class="nav-link" data-scroll-target="#implications-for-central-bank-institutional-design"><span class="header-section-number">16.5.4</span> Implications for Central Bank Institutional Design</a></li>
+  <li><a href="#influence-of-this-research" id="toc-influence-of-this-research" class="nav-link" data-scroll-target="#influence-of-this-research"><span class="header-section-number">16.5.5</span> Influence of This Research</a></li>
+  </ul></li>
+  <li><a href="#discussion-of-low-inflation" id="toc-discussion-of-low-inflation" class="nav-link" data-scroll-target="#discussion-of-low-inflation"><span class="header-section-number">16.6</span> Discussion of Low Inflation</a>
+  <ul class="collapse">
+  <li><a href="#long-run-benefits-of-low-inflation" id="toc-long-run-benefits-of-low-inflation" class="nav-link" data-scroll-target="#long-run-benefits-of-low-inflation"><span class="header-section-number">16.6.1</span> Long-Run Benefits of Low Inflation</a></li>
+  <li><a href="#problems-with-a-low-inflation-target" id="toc-problems-with-a-low-inflation-target" class="nav-link" data-scroll-target="#problems-with-a-low-inflation-target"><span class="header-section-number">16.6.2</span> Problems with a Low Inflation Target</a></li>
+  </ul></li>
+  <li><a href="#inflation" id="toc-inflation" class="nav-link" data-scroll-target="#inflation"><span class="header-section-number">16.7</span> Inflation</a>
+  <ul class="collapse">
+  <li><a href="#low-inflation-prior-to-2021" id="toc-low-inflation-prior-to-2021" class="nav-link" data-scroll-target="#low-inflation-prior-to-2021"><span class="header-section-number">16.7.1</span> Low Inflation Prior to 2021</a></li>
+  <li><a href="#the-phillips-curve-and-recent-inflation" id="toc-the-phillips-curve-and-recent-inflation" class="nav-link" data-scroll-target="#the-phillips-curve-and-recent-inflation"><span class="header-section-number">16.7.2</span> The Phillips Curve and Recent Inflation</a></li>
+  </ul></li>
+  <li><a href="#mmt" id="toc-mmt" class="nav-link" data-scroll-target="#mmt"><span class="header-section-number">16.8</span> MMT</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chap9.html">Monetary Policy</a></li><li class="breadcrumb-item"><a href="./Chap16.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Phillips Curve: Evidence and Implications</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Phillips Curve: Evidence and Implications</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="central-banks-and-economic-conditions" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="central-banks-and-economic-conditions"><span class="header-section-number">16.1</span> Central Banks and Economic Conditions</h2>
+<p>Modern economists tend to see inflation as being determined not by the money supply but by the overall demand for goods and services being strong relative to the economy’s capacity to supply them.</p>
+<p>Central banks play an important role in influencing the demand for goods and services by controlling interest rates and credit conditions.</p>
+<p>Lower interest rates can:</p>
+<ol type="1">
+<li>Give more disposable income to those who have borrowed money, allowing them to spend more on goods and services.</li>
+<li>Make households, businesses, and governments more likely to borrow money for consumption or investment purchases.</li>
+<li>Increase the value of assets such as shares and houses,</li>
+<li>Increase lending from banks because credit risk for borrowers is lower when interest rates are low.</li>
+</ol>
+<p>Central banks can also directly affect the supply of credit through macro-prudential policies. Through all of these channels, central banks can influence inflation.</p>
+</section>
+<section id="phillips-curve" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="phillips-curve"><span class="header-section-number">16.2</span> Phillips curve</h2>
+<p>How does economic strength translate into inflation?</p>
+<p>An early version of this idea was the so-called <strong>Phillips curve</strong>, named after LSE economist <strong>A. W. Phillips</strong>, who published a paper on the subject in 1958. The idea behind the Phillips curve was that inflation would be high when the unemployment rate was low, and inflation would be low when unemployment was high.</p>
+<ol type="1">
+<li>The proposed mechanism starts when the economy is doing well and there is substantial demand for goods and services. Employers hire more workers, and the unemployment rate becomes low.</li>
+<li>Workers are then in high demand and can obtain higher wage increases.</li>
+<li>These increases in wage costs raise costs for firms, resulting in higher price inflation.</li>
+</ol>
+<p>A 1960 study by MIT economists <strong>Solow and Samuelson</strong> replicated these findings for the United States and emphasised that the relationship also worked for price inflation. The Phillips curve tradeoff quickly became the basis for discussions of macroeconomic policy.</p>
+<p><em>Figure 1. A. W. Phillips’s original relationship between money-wage inflation and unemployment, 1861–1913</em></p>
+<div id="fig-ch16-01" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch16-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part16/fig-16-01.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch16-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16.1: A. W. Phillips’s original scatterplot, 1861–1913
+</figcaption>
+</figure>
+</div>
+<p><em>Figure 2. Phillips’s curve fitted to data for 1948–1957, with unemployment lagged seven months</em></p>
+<div id="fig-ch16-02" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch16-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part16/fig-16-02.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch16-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16.2: A. W. Phillips’s later relationship between money-wage inflation and unemployment
+</figcaption>
+</figure>
+</div>
+<p><em>Figure 3. Solow and Samuelson’s modified Phillips curve for the United States, illustrating the proposed choice between unemployment and price stability</em></p>
+<div id="fig-ch16-03" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch16-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part16/fig-16-03.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch16-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16.3: Solow and Samuelson’s modified Phillips curve
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-expectations-augmented-phillips-curve" class="level2" data-number="16.3">
+<h2 data-number="16.3" class="anchored" data-anchor-id="the-expectations-augmented-phillips-curve"><span class="header-section-number">16.3</span> The Expectations-Augmented Phillips Curve</h2>
+<p>In a famous presidential address to the American Economics Association, <strong>Milton Friedman (1968)</strong> pointed out that it was <strong>expected real wages</strong> that affected wage bargaining.</p>
+<p>If low unemployment gives workers a strong bargaining position, then high nominal wage inflation alone is not enough. Workers want nominal wage inflation to exceed price inflation.</p>
+<p>Assuming that wage inflation is passed through to price inflation, this gives the <strong>expectations-augmented Phillips curve</strong>:</p>
+<p><span class="math display">\[
+\pi_t = \pi_t^e - \gamma(U_t-U^*)
+\]</span></p>
+<p>Friedman argued that if policy-makers tried to exploit an apparent Phillips curve tradeoff, the public would become accustomed to high inflation and come to expect it. Expected inflation, <span class="math inline">\(\pi_t^e\)</span>, would drift upwards, worsening the tradeoff between inflation and output.</p>
+<p>In the long run, policy-makers cannot fool the public: <span class="math inline">\(\pi_t^e \approx \pi_t\)</span>. As a result, unemployment cannot be kept away from its <strong>natural rate</strong>, so <span class="math inline">\(U_t\approx U^*\)</span>.</p>
+<p><em>Figure 4. Friedman’s expectations-adjusted Phillips curve, showing how higher inflation expectations shift the curve</em></p>
+<div id="fig-ch16-04" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch16-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part16/fig-16-04.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch16-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16.4: Friedman’s 1977 graph on the expectations-adjusted Phillips curve
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-demise-of-the-basic-phillips-curve" class="level2" data-number="16.4">
+<h2 data-number="16.4" class="anchored" data-anchor-id="the-demise-of-the-basic-phillips-curve"><span class="header-section-number">16.4</span> The Demise of the Basic Phillips Curve</h2>
+<p>US monetary and fiscal policies in the 1960s were very expansionary. At first, the Phillips curve seemed to work: inflation rose, and unemployment fell. However, as the public became accustomed to high inflation, the Phillips curve tradeoff worsened. By the late 1960s, inflation was still rising even though unemployment had also increased.</p>
+<p>This combination of high inflation and high unemployment, known as <strong>stagflation</strong>, became even worse in the 1970s. This was exactly what Friedman had predicted. The data no longer show any clear negative relationship between inflation and unemployment, and the original formulation of the Phillips curve is widely regarded as wrong. The 1960s are now seen as an example of what can go wrong when monetary policy pursues the wrong goals.</p>
+<p><em>Figure 5. US inflation and unemployment, 1955–2024</em></p>
+<div id="fig-ch16-05" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch16-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part16/fig-16-05.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch16-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16.5: US inflation and unemployment time series from 1955 to 2024
+</figcaption>
+</figure>
+</div>
+<p><em>Figure 6. US inflation and unemployment, 1955–2024: the scatterplot does not show the stable negative relationship implied by the basic Phillips curve. Inflation is measured by the four-quarter percentage change in the GDP deflator</em></p>
+<div id="fig-ch16-06" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch16-06-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part16/fig-16-06.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch16-06-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16.6: Scatterplot of US unemployment against inflation, 1955–2024
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-accelerationist-phillips-curve" class="level2" data-number="16.5">
+<h2 data-number="16.5" class="anchored" data-anchor-id="the-accelerationist-phillips-curve"><span class="header-section-number">16.5</span> The Accelerationist Phillips Curve</h2>
+<p>What determines inflation expectations? Friedman argued that they are determined <strong>adaptively</strong>. For example, people might use last year’s inflation rate as a guide to what to expect this year. In that case, <span class="math inline">\(\pi_t^e = \pi_{t-1}\)</span>, and the expectations-augmented Phillips curve becomes</p>
+<p><span class="math display">\[
+\pi_t = \pi_{t-1} - \gamma(U_t-U^*)
+\]</span></p>
+<p>This equation relates the <strong>change in inflation</strong> to the gap between unemployment and its natural rate. When unemployment is below its natural rate, inflation will be increasing; when unemployment is above its natural rate, inflation will be decreasing. Because the model relates the rate of acceleration of the price level to unemployment, it is known as the <strong>accelerationist Phillips curve</strong>. This model fitted the data quite well for a long time.</p>
+<p><em>Figure 7. Unemployment and annual changes in US inflation, 1955–2024. Inflation changes are measured as the change in four-quarter inflation relative to a year earlier</em></p>
+<div id="fig-ch16-07" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch16-07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part16/fig-16-07.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch16-07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16.7: Scatterplot of unemployment against the change in inflation, 1955–2024
+</figcaption>
+</figure>
+</div>
+<p>The accelerationist Phillips curve, relating changes in inflation to the unemployment rate, appears to offer a key tool to central bankers, and it is indeed useful. However, the real world is more complicated than this simple model. Two complications are particularly important:</p>
+<section id="supply-shocks" class="level3" data-number="16.5.1">
+<h3 data-number="16.5.1" class="anchored" data-anchor-id="supply-shocks"><span class="header-section-number">16.5.1</span> Supply Shocks</h3>
+<p><strong>Supply shocks</strong>, such as large increases or decreases in food or energy prices, can temporarily shift the inflation–unemployment tradeoff. In this case, the equation becomes</p>
+<p><span class="math display">\[
+\Delta\pi_t=-\gamma(U_t-U^*)+s_t
+\]</span></p>
+<p>Bad supply shocks are those that raise inflation even though the unemployment rate has not changed. Oil-price shocks are a good example.</p>
+</section>
+<section id="the-natural-rate-of-unemployment" class="level3" data-number="16.5.2">
+<h3 data-number="16.5.2" class="anchored" data-anchor-id="the-natural-rate-of-unemployment"><span class="header-section-number">16.5.2</span> The <strong>natural rate of unemployment</strong></h3>
+<p>The <strong>natural rate of unemployment</strong>, <span class="math inline">\(U^*\)</span>, is not a universal constant. It probably changes over time, and central bankers must estimate it at any particular moment. For example, the natural rate in Europe rose substantially in the 1980s and 1990s. More generally, central bankers are usually uncertain about how fast the economy can grow without triggering inflationary pressures.</p>
+</section>
+<section id="tradeoffs-offered-by-the-accelerationist-phillips-curve" class="level3" data-number="16.5.3">
+<h3 data-number="16.5.3" class="anchored" data-anchor-id="tradeoffs-offered-by-the-accelerationist-phillips-curve"><span class="header-section-number">16.5.3</span> Tradeoffs Offered by the Accelerationist Phillips Curve</h3>
+<p>Over the short term, the accelerationist model describes a new tradeoff for central bankers. For example, they can choose to keep unemployment below the natural rate temporarily at the expense of increasing inflation. However, the model does not really offer an exploitable long-run tradeoff.</p>
+<p>Even if central bankers wanted to be popular and maintain unemployment below its natural rate, the cost of ever-increasing inflation would be too high. Furthermore, if they tried to exploit this relationship, people would recognise the policy and adjust their expectations. They would probably stop setting <span class="math inline">\(\pi_t^e=\pi_{t-1}\)</span>, and the relationship would break down.</p>
+<p>Policy-makers therefore have to accept that, over the long run, unemployment will be close to its natural rate. In this situation, they should commit to a <strong>low inflation rate</strong>. Nevertheless, the distinction between a tradeoff that can be exploited to some extent in the short run but not in the long run remains important.</p>
+</section>
+<section id="implications-for-central-bank-institutional-design" class="level3" data-number="16.5.4">
+<h3 data-number="16.5.4" class="anchored" data-anchor-id="implications-for-central-bank-institutional-design"><span class="header-section-number">16.5.4</span> Implications for Central Bank Institutional Design</h3>
+<p>The expectations-augmented Phillips curve suggests that the best outcome is obtained when the central bank can commit to low inflation and the public believes this commitment. This suggests several approaches to central bank institutional design.</p>
+<ol type="1">
+<li><p><strong>Political independence</strong> is important because a central bank that plans for the long term, rather than worrying about economic performance during election years, is more likely to maintain its commitment to low inflation. Independence from political control can therefore reassure the public about the central bank’s credibility. Influential research by <strong>Alesina and Summers (1993)</strong> showed that more independent central banks were associated with lower inflation.</p></li>
+<li><p><strong>Conservative central bankers</strong> may also improve outcomes. If a central banker strongly dislikes inflation, and the public believes this, the economy can move closer to the ideal low-inflation outcome without having to raise unemployment. The government may therefore appoint a central banker who is more inflation-averse than the government itself. <strong>Paul Volcker’s appointment</strong> as Fed chair in 1979 might be an example.</p></li>
+<li><p><strong>Consequences for bad inflation outcomes</strong> provide another way to establish credibility. Introducing laws that impose adverse consequences on central bankers when inflation is high can help convince the public that they will adhere to a low-inflation commitment.</p></li>
+</ol>
+<p><em>Figure 8. Central bank independence and average inflation across countries, as reported by Alesina and Summers (1993)</em></p>
+<div id="fig-ch16-08" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch16-08-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part16/fig-16-08.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch16-08-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16.8: Alesina and Summers evidence on central bank independence and inflation
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="influence-of-this-research" class="level3" data-number="16.5.5">
+<h3 data-number="16.5.5" class="anchored" data-anchor-id="influence-of-this-research"><span class="header-section-number">16.5.5</span> Influence of This Research</h3>
+<p>These ideas had a considerable influence on the legal structure of central banks around the world.</p>
+<ol type="1">
+<li><p><strong>Political independence</strong> has increased substantially. For example, the <strong>Bank of England</strong> was made independent in 1997; previously, the Chancellor of the Exchequer had set interest rates. The <strong>ECB/Eurosystem</strong> is also highly independent of political control.</p></li>
+<li><p>The idea of <strong>conservative central bankers</strong> has also become influential. Central bankers around the world now speak much more about the evils of inflation and the benefits of price stability. They mainly do so because they believe these claims, but there is also a marketing element: the public’s belief in a commitment to low inflation may improve the macroeconomic tradeoff available to the central bank.</p></li>
+<li><p><strong>consequences for bad inflation outcomes</strong> have become more common. Many central banks have legally imposed inflation targets, with penalties or formal obligations when the target is not met. For instance, the Governor of the Bank of England must write a letter to the Chancellor explaining why the inflation target was not achieved.</p></li>
+</ol>
+</section>
+</section>
+<section id="discussion-of-low-inflation" class="level2" data-number="16.6">
+<h2 data-number="16.6" class="anchored" data-anchor-id="discussion-of-low-inflation"><span class="header-section-number">16.6</span> Discussion of Low Inflation</h2>
+<section id="long-run-benefits-of-low-inflation" class="level3" data-number="16.6.1">
+<h3 data-number="16.6.1" class="anchored" data-anchor-id="long-run-benefits-of-low-inflation"><span class="header-section-number">16.6.1</span> Long-Run Benefits of Low Inflation</h3>
+<p>Because central banks now believe that they cannot reliably control unemployment or economic growth over long periods, they tend to focus on what they believe they can control: <strong>inflation</strong>. In recent years, most central banks have aimed to keep inflation low and stable as their main goal.</p>
+<p>Former Fed chair <strong>Ben Bernanke</strong>, in his speech <em>The Benefits of Price Stability</em>, argued that</p>
+<blockquote class="blockquote">
+<p>“the mandated goals of price stability and maximum employment are almost entirely compatible.”</p>
+</blockquote>
+<p>Low inflation can support long-run economic growth by</p>
+<ol type="1">
+<li>saving the time and energy associated with dealing with high inflation, such as regularly resetting prices or rewriting contracts.</li>
+<li>It can facilitate long-run decision-making because consumers and businesses do not need to worry as much about uncertainty concerning the future price level.</li>
+<li>It can also improve the price signals on which the market system relies.</li>
+</ol>
+<p>However, it is difficult to argue on these grounds that there is a large welfare gain from reducing inflation from, for example, 4% to 2%.</p>
+</section>
+<section id="problems-with-a-low-inflation-target" class="level3" data-number="16.6.2">
+<h3 data-number="16.6.2" class="anchored" data-anchor-id="problems-with-a-low-inflation-target"><span class="header-section-number">16.6.2</span> Problems with a Low Inflation Target</h3>
+<p>Most central banks have adopted an inflation target of approximately 2% over the past two decades, and inflation has generally been kept in check in advanced economies since the mid-1980s.</p>
+<p>More recently, there has been debate over whether a 2% inflation target is too low. When inflation averages 2%, relatively small shocks can bring the economy close to deflation. A higher inflation target might give central banks more room to reduce interest rates before reaching lower bounds on policy rates and having to use unconventional policies such as <strong>quantitative easing (QE)</strong>.</p>
+<p>The paper by <strong>Blanchard et al.</strong>, <em>Rethinking Macroeconomic Policy</em>, and Ben Bernanke’s blog post <em>The Zero Lower Bound on Interest Rates</em> discuss the potential benefits and costs of higher inflation targets.</p>
+<p>There have also been signs that some policy-makers are reconsidering a focus purely on inflation targeting. The <strong>Reserve Bank of New Zealand</strong>, the first pure inflation targeter in the 1990s, was given a changed mandate in March 2018 that required it also to take employment into account when making monetary policy decisions.</p>
+</section>
+</section>
+<section id="inflation" class="level2" data-number="16.7">
+<h2 data-number="16.7" class="anchored" data-anchor-id="inflation"><span class="header-section-number">16.7</span> Inflation</h2>
+<section id="low-inflation-prior-to-2021" class="level3" data-number="16.7.1">
+<h3 data-number="16.7.1" class="anchored" data-anchor-id="low-inflation-prior-to-2021"><span class="header-section-number">16.7.1</span> Low Inflation Prior to 2021</h3>
+<p>Prior to 2021, inflation had been low in advanced economies for years despite many of these economies experiencing very low unemployment. Some commentators speculated that “the Phillips curve is dead,” meaning central banks no longer needed to worry about overheating economies generating higher inflation.</p>
+<p>Several explanations were proposed.</p>
+<ol type="1">
+<li>First, the unemployment rate may have become a poor summary measure of the balance between supply and demand in the economy.</li>
+<li>Second, in an increasingly globalised economy, the relevant supply capacity determining inflation may be global rather than national, with low inflation reflecting spare capacity in the world economy.</li>
+<li>Third, after many years of low inflation, the public’s inflation expectations may have remained <strong>anchored</strong> around 2%.</li>
+</ol>
+<p>In his 2021 paper <em>Central Banks and Inflation: Where Do We Stand and How Did We Get Here?</em>, Karl Whelan wrote:</p>
+<blockquote class="blockquote">
+<p>“the laws of supply and demand have not been repealed. There is a strong body of empirical evidence telling us that macroeconomic policy can influence aggregate demand and there is little reason to doubt that stimulating aggregate demand sufficiently can raise inflation.” Recent experience supports this view.</p>
+</blockquote>
+</section>
+<section id="the-phillips-curve-and-recent-inflation" class="level3" data-number="16.7.2">
+<h3 data-number="16.7.2" class="anchored" data-anchor-id="the-phillips-curve-and-recent-inflation"><span class="header-section-number">16.7.2</span> The Phillips Curve and Recent Inflation</h3>
+<p>Much of the recent surge in inflation, particularly in the euro area, was due to <strong>supply shocks</strong>, which are not part of the basic Phillips curve relationship. However, part of the increase stemmed from the effects of fiscal and monetary stimulus on aggregate demand.</p>
+<p>The unemployment rate probably is not a very good summary measure, if it ever was, of imbalances between supply and demand. Nevertheless, central bankers have clearly continued to use the <strong>expectations-augmented Phillips curve</strong> to frame their thinking about how to reduce inflation.</p>
+<p>Central banks such as the <strong>Fed</strong> and the <strong>ECB</strong> raised interest rates to slow economic activity and reduce inflation. They also expressed concern that high inflation could <strong>de-anchor inflation expectations</strong>, potentially leading to a return of stagflation.</p>
+<p>However, increases in longer-term inflation expectations measured by surveys of consumers and professional economists were relatively restrained. This suggested that the public largely expected the high inflation rates to be temporary.</p>
+</section>
+</section>
+<section id="mmt" class="level2" data-number="16.8">
+<h2 data-number="16.8" class="anchored" data-anchor-id="mmt"><span class="header-section-number">16.8</span> MMT</h2>
+<p>In the years before the pandemic, the absence of inflation and the weak relationship between money supply and prices prompted some high-profile alternative approaches to monetary policy.</p>
+<p>The school known as <strong>Modern Monetary Theory (MMT)</strong>, associated most notably with <strong>Stefanie Kelton</strong>, promotes the idea that government spending should be financed by central bank money creation rather than taxes, up to the point where such financing causes inflation.</p>
+<p>MMT advocates are correct that this is technically a possible way to run macroeconomic policy. However, this raises important questions. Would a central bank tasked with financing government spending be sufficiently independent to restrain inflation when it rises? Would governments actually adjust spending and taxes to control inflation?</p>
+<p>Over the long run, there is a relatively simple reason why financing government spending through central bank money creation is not a magic solution. If the government wants to increase <strong>real government spending</strong>, the required resources must come from the private sector. This transfer can happen through taxes that reduce private incomes, or through higher prices that act as an <strong>inflation tax</strong>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Chap15.html" class="pagination-link" aria-label="Quantitative Easing">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Quantitative Easing</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Chap17.html" class="pagination-link" aria-label="Real Interest Rates and the Taylor Rule">
+        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Real Interest Rates and the Taylor Rule</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

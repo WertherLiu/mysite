@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>9&nbsp; Money Supply – Money and Banking</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Chap10.html" rel="next">
+<link href="./Chap8.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-f2c6d6e2b784ddc5de38779acc06f37d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chap9.html">Monetary Policy</a></li><li class="breadcrumb-item"><a href="./Chap9.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Money Supply</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="https://assets.yalinliu.org/Books/Money/assets/book-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="https://assets.yalinliu.org/Books/Money/assets/book-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Money and Banking</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">货币经济学课程笔记</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Central Banks and the Banking System</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Banks and Financial Intermediation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Liquidity and Solvency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Central Banks</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The Fed and the ECB</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Banking Crises</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Incentive Problems in Banking</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Micro-Prudential Banking Regulation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Macro-Prudential Policies</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Monetary Policy</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap9.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Money Supply</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Monetarism</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">How Central Banks Set Interest Rates: The Federal Reserve</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">How Central Banks Set Interest Rates: The ECB</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Long-Term Interest Rates: Bonds and the Expectations Theory</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">More on Long-Term Interest Rates: Term Premia, Risk Premia and Collateral</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Quantitative Easing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Phillips Curve: Evidence and Implications</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Real Interest Rates and the Taylor Rule</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Exchange Rate Regimes and the Euro</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap18.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Exchange Rate Regimes and the Euro</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chap19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Euro Crisis</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#currency-and-the-monetary-base" id="toc-currency-and-the-monetary-base" class="nav-link active" data-scroll-target="#currency-and-the-monetary-base"><span class="header-section-number">9.1</span> Currency and the Monetary Base</a>
+  <ul class="collapse">
+  <li><a href="#central-banks-and-the-monetary-base" id="toc-central-banks-and-the-monetary-base" class="nav-link" data-scroll-target="#central-banks-and-the-monetary-base"><span class="header-section-number">9.1.1</span> Central Banks and the Monetary Base</a></li>
+  <li><a href="#transaction-usage-does-not-explain-amount-of-banknotes-in-circulation" id="toc-transaction-usage-does-not-explain-amount-of-banknotes-in-circulation" class="nav-link" data-scroll-target="#transaction-usage-does-not-explain-amount-of-banknotes-in-circulation"><span class="header-section-number">9.1.2</span> Transaction Usage Does Not Explain Amount of Banknotes in Circulation</a></li>
+  <li><a href="#the-euro-changeover" id="toc-the-euro-changeover" class="nav-link" data-scroll-target="#the-euro-changeover"><span class="header-section-number">9.1.3</span> The Euro Changeover</a></li>
+  <li><a href="#large-increase-of-currency-in-circulation-during-the-pandemic" id="toc-large-increase-of-currency-in-circulation-during-the-pandemic" class="nav-link" data-scroll-target="#large-increase-of-currency-in-circulation-during-the-pandemic"><span class="header-section-number">9.1.4</span> Large Increase of Currency in Circulation During the Pandemic</a></li>
+  </ul></li>
+  <li><a href="#the-money-supply-and-the-money-multiplier" id="toc-the-money-supply-and-the-money-multiplier" class="nav-link" data-scroll-target="#the-money-supply-and-the-money-multiplier"><span class="header-section-number">9.2</span> The Money Supply and the Money Multiplier</a>
+  <ul class="collapse">
+  <li><a href="#money-creation-via-loans" id="toc-money-creation-via-loans" class="nav-link" data-scroll-target="#money-creation-via-loans"><span class="header-section-number">9.2.1</span> Money Creation via loans</a></li>
+  <li><a href="#the-money-multiplier" id="toc-the-money-multiplier" class="nav-link" data-scroll-target="#the-money-multiplier"><span class="header-section-number">9.2.2</span> The Money Multiplier</a></li>
+  <li><a href="#balance-sheet-with-deposits-staying-within-the-bank" id="toc-balance-sheet-with-deposits-staying-within-the-bank" class="nav-link" data-scroll-target="#balance-sheet-with-deposits-staying-within-the-bank"><span class="header-section-number">9.2.3</span> Balance Sheet with Deposits Staying Within the Bank</a></li>
+  <li><a href="#create-deposits" id="toc-create-deposits" class="nav-link" data-scroll-target="#create-deposits"><span class="header-section-number">9.2.4</span> Create Deposits</a></li>
+  </ul></li>
+  <li><a href="#incorporating-currency-and-excess-reserves" id="toc-incorporating-currency-and-excess-reserves" class="nav-link" data-scroll-target="#incorporating-currency-and-excess-reserves"><span class="header-section-number">9.3</span> Incorporating Currency and Excess Reserves</a></li>
+  <li><a href="#friedman-and-schwartz-on-the-great-depression" id="toc-friedman-and-schwartz-on-the-great-depression" class="nav-link" data-scroll-target="#friedman-and-schwartz-on-the-great-depression"><span class="header-section-number">9.4</span> Friedman and Schwartz on the Great Depression</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chap9.html">Monetary Policy</a></li><li class="breadcrumb-item"><a href="./Chap9.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Money Supply</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Money Supply</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>In economics, <strong>money</strong> refers to the most liquid assets—assets that can readily be used to purchase goods and services. Liquidity differs across assets: cash is highly liquid, whereas selling an asset such as a house involves time and transaction costs. Consequently, economists use several monetary aggregates with different degrees of liquidity.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 51%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aggregate</th>
+<th>Definition</th>
+<th>Main idea</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Monetary base (M0)</strong></td>
+<td>Currency in circulation + reserves held at the central bank</td>
+<td>Central-bank money</td>
+</tr>
+<tr class="even">
+<td><strong>M1</strong></td>
+<td>Currency + checking deposits</td>
+<td>Assets directly usable for payments</td>
+</tr>
+<tr class="odd">
+<td><strong>M2</strong></td>
+<td>M1 + less liquid assets, such as savings deposits and money market mutual funds</td>
+<td>A broader measure of money</td>
+</tr>
+</tbody>
+</table>
+<p>The monetary base and M1 are <strong>not the same</strong>: bank reserves are part of the monetary base, while checking deposits are included in M1.</p>
+<section id="currency-and-the-monetary-base" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="currency-and-the-monetary-base"><span class="header-section-number">9.1</span> Currency and the Monetary Base</h2>
+<section id="central-banks-and-the-monetary-base" class="level3" data-number="9.1.1">
+<h3 data-number="9.1.1" class="anchored" data-anchor-id="central-banks-and-the-monetary-base"><span class="header-section-number">9.1.1</span> Central Banks and the Monetary Base</h3>
+<p>Central banks can control the monetary base.</p>
+<p>The monetary base has two components: <strong>currency</strong> and <strong>reserves</strong>. One might imagine that currency is the component central banks have the most control over. Central banks are the sole providers of currency, and when they supply it to a bank, they deduct the same amount from the bank’s reserve account.</p>
+<p>However, in a modern economy, the amount of currency in circulation is driven by <strong>public demand</strong>. The Fed or ECB are not going to refuse to provide currency to banks to keep their ATM machines running, provided the banks have sufficient credit in their reserve accounts.</p>
+<p>Thus, the way modern central banks control the monetary base is by <strong>controlling the quantity of reserves</strong>. Reserves can be controlled through <strong>open market operations</strong>:</p>
+<ul>
+<li><strong>Buying securities</strong> increases the amount of bank reserves.</li>
+<li><strong>Selling securities</strong> decreases the amount of bank reserves.</li>
+</ul>
+</section>
+<section id="transaction-usage-does-not-explain-amount-of-banknotes-in-circulation" class="level3" data-number="9.1.2">
+<h3 data-number="9.1.2" class="anchored" data-anchor-id="transaction-usage-does-not-explain-amount-of-banknotes-in-circulation"><span class="header-section-number">9.1.2</span> Transaction Usage Does Not Explain Amount of Banknotes in Circulation</h3>
+<p>Some maths: there are <strong>€1,610,000 million</strong> in banknotes in circulation, and the euro-area population is estimated at <strong>343 million</strong>. That is an average amount of banknotes per person of <strong>€4,693</strong>.</p>
+<p>Pretty clearly, people are not keeping that amount of money on hand for everyday transaction purposes.</p>
+<p>Large banknotes (<strong>€100 or more</strong>) play a much greater role in the supply than one might imagine, accounting for about <strong>half the total value</strong> of banknotes in circulation.</p>
+<p>ECB research, based on information about how often notes are returned to the central bank, estimates that:</p>
+<ul>
+<li>Only <strong>one quarter</strong> of the total value of banknotes in circulation is held for <strong>transactional purposes</strong>.</li>
+<li>Around <strong>30%</strong> of the total value of banknotes in circulation is held <strong>outside the euro area</strong>.</li>
+<li>Up to <strong>45%</strong> of the value of euro banknotes is held as a <strong>store of value</strong> (i.e., “mattress money”).</li>
+</ul>
+<div id="fig-ch09-01" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch09-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part9/fig-09-01.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.1: Card payments and cash demand in advanced and emerging market economies
+</figcaption>
+</figure>
+</div>
+<p><em>The chart reports that card payments and cash demand have generally increased since 2007. It compares the value of card payments (horizontal axis) and cash in circulation (vertical axis), both as percentages of GDP, in advanced and emerging market economies.</em></p>
+<p><strong>Source:</strong> BIS Quarterly Review, March 2018.</p>
+</section>
+<section id="the-euro-changeover" class="level3" data-number="9.1.3">
+<h3 data-number="9.1.3" class="anchored" data-anchor-id="the-euro-changeover"><span class="header-section-number">9.1.3</span> The Euro Changeover</h3>
+<p>An interesting incident occurred in the run-up to the <strong>euro changeover in 2002</strong>.</p>
+<p>It is well known that much of the cash in circulation reflects <strong>“hoarded” cash</strong>, generally held in <strong>high denominations</strong>.</p>
+<p>Imagine yourself in 2001, with a huge pile of <strong>500 Deutsche Mark notes</strong> because you run what we might call “an informal business.” Would you have fancied walking into a bank in early 2002 to get the whole pile changed into euros?</p>
+<p>Hence, currency in circulation in the euro area gradually fell from <strong>€340 billion in January 2001</strong> to <strong>€234 billion in December 2001</strong>, and then gradually recovered. Most of the cash taken out of circulation was <strong>deposited in banks</strong>.</p>
+<p>There was a big decline and then a big increase in the <strong>average value of banknotes in circulation</strong>. (The lecture refers to an article on the ECB website.) The <strong>€500 note</strong> has been very popular with “informal” businesses.</p>
+<p><em>The graph shows the sharp reduction in currency in circulation around the 2002 euro changeover, followed by a substantial recovery.</em></p>
+<div id="fig-ch09-02" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch09-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part9/fig-09-02.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-02-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.2: Decline in euro-area currency in circulation before the changeover and subsequent recovery
+</figcaption>
+</figure>
+</div>
+<p><em>The chart compares overnight deposits and currency in circulation, measured as three-month averages of monthly flows in EUR billions. The fall in currency coincided with a large increase in overnight deposits.</em></p>
+<div id="fig-ch09-03" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch09-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part9/fig-09-03.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-03-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.3: Overnight deposits and currency in circulation around the euro changeover
+</figcaption>
+</figure>
+</div>
+<p><em>The average value of banknotes in circulation fell sharply around the euro changeover and then rose substantially.</em></p>
+<div id="fig-ch09-04" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch09-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part9/fig-09-04.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.4: Average banknote value in the euro area around 2002
+</figcaption>
+</figure>
+</div>
+<p><strong>Source:</strong> ECB; partly estimated, as indicated in the original figure.</p>
+</section>
+<section id="large-increase-of-currency-in-circulation-during-the-pandemic" class="level3" data-number="9.1.4">
+<h3 data-number="9.1.4" class="anchored" data-anchor-id="large-increase-of-currency-in-circulation-during-the-pandemic"><span class="header-section-number">9.1.4</span> Large Increase of Currency in Circulation During the Pandemic</h3>
+<p><em>The FRED chart shows US currency in circulation (billions of dollars) from 1960 onward, including a pronounced increase during the COVID-19 pandemic.</em></p>
+<div id="fig-ch09-05" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch09-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part9/fig-09-05.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.5: US currency in circulation, FRED series
+</figcaption>
+</figure>
+</div>
+<div id="fig-ch09-06" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch09-06-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part9/fig-09-06.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-06-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.6: US currency in circulation, FRED series (recent observations).
+</figcaption>
+</figure>
+</div>
+<p><strong>Source:</strong> Board of Governors of the Federal Reserve System (US), via FRED (fred.stlouisfed.org).</p>
+<p><em>The euro-area series similarly shows an increase in currency in circulation during the pandemic.</em></p>
+<div id="fig-ch09-07" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch09-07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part9/fig-09-07.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.7: Euro-area currency in circulation, ECB statistical series
+</figcaption>
+</figure>
+</div>
+<p><strong>Source:</strong> ECB Statistical Data Warehouse.</p>
+<p><em>The lecture emphasizes that the rise in the stock of currency in circulation reflected <strong>fewer banknotes being returned</strong>, not an increase in issuance: <strong>issuance was down</strong>.</em></p>
+<div id="fig-ch09-08" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch09-08-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part9/fig-09-08.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-08-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.8: Euro-area banknote issuance and returns
+</figcaption>
+</figure>
+</div>
+<p><strong>Source:</strong> ECB Statistical Data Warehouse.</p>
+</section>
+</section>
+<section id="the-money-supply-and-the-money-multiplier" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="the-money-supply-and-the-money-multiplier"><span class="header-section-number">9.2</span> The Money Supply and the Money Multiplier</h2>
+<p>We will now describe a <strong>simple model</strong> of how the central bank can control measures of the money supply, such as <strong>M1</strong>, by controlling the monetary base. <strong>Problems with this model are discussed in the next lecture.</strong></p>
+<p>Central banks do <strong>not</strong> have direct control over these aggregates. Here we describe how <strong>monetarists</strong> saw the relationship between the quantity of reserves and the M1 measure of the money supply.</p>
+<section id="money-creation-via-loans" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="money-creation-via-loans"><span class="header-section-number">9.2.1</span> Money Creation via loans</h3>
+<p>Let’s start by considering a very simple world where <strong>all banks are just starting up in business and do not yet have any sources of funds</strong>. Now suppose the central bank conducts an <strong>open market operation</strong>, buying a security so that deposits rise by <strong>$100</strong>. When the cheque is deposited, the central bank increases the bank’s reserves by <strong>$100</strong>.</p>
+<p><strong>First Bank’s Balance Sheet — Initial Position</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>First Bank: Assets</th>
+<th style="text-align: right;">Amount</th>
+<th>Liabilities</th>
+<th style="text-align: right;">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reserves</td>
+<td style="text-align: right;">$100</td>
+<td>Deposits</td>
+<td style="text-align: right;">$100</td>
+</tr>
+<tr class="even">
+<td>Loans</td>
+<td style="text-align: right;">$0</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p>Suppose also that <strong>reserve requirements are 10% of deposits</strong>. Assume the bank wants to keep <strong>only the minimum required level of reserves</strong> and uses the rest of its available funds to make loans, which earn a higher rate of return. The bank <strong>lends out $90</strong> and <strong>keeps the remaining $10 in reserves</strong>.</p>
+<p><strong>First Bank’s Balance Sheet — After Lending</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>First Bank: Assets</th>
+<th style="text-align: right;">Amount</th>
+<th>Liabilities</th>
+<th style="text-align: right;">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reserves</td>
+<td style="text-align: right;">$10</td>
+<td>Deposits</td>
+<td style="text-align: right;">$100</td>
+</tr>
+<tr class="even">
+<td>Loans</td>
+<td style="text-align: right;">$90</td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p>The person who received the <strong>$90 loan</strong> from the first bank deposits the funds at a <strong>second bank</strong>, which sees its deposits and reserves both credited by <strong>$90</strong>.</p>
+<p><strong>Second Bank’s Balance Sheet — Initial Position</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Assets</th>
+<th>Amount (<span class="math inline">\() | Liabilities | Amount (\)</span>)</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reserves</td>
+<td>90</td>
+<td>Deposits</td>
+<td>90</td>
+</tr>
+<tr class="even">
+<td>Loans</td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Notice that there are <strong>still $100 of reserves in the system</strong>: <strong>$10 at Bank A</strong> and <strong>$90 at Bank B</strong>.</p>
+<p>Then Bank B decides to <strong>keep 10% of its deposits in reserves</strong> and <strong>loan out the rest</strong>, so its balance sheet becomes:</p>
+<p><strong>Second Bank’s Balance Sheet — After Lending</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Assets</th>
+<th>Amount (<span class="math inline">\() | Liabilities | Amount (\)</span>)</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reserves</td>
+<td>9</td>
+<td>Deposits</td>
+<td>90</td>
+</tr>
+<tr class="even">
+<td>Loans</td>
+<td>81</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>You can probably see what is coming next. The person who received the <strong>$81 loan</strong> from the second bank deposits these funds at a <strong>third bank</strong>, which sees its deposits and reserves both credited by <strong>$81</strong>.</p>
+<p><strong>Third Bank’s Balance Sheet — Initial Position</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Assets</th>
+<th>Amount (<span class="math inline">\() | Liabilities | Amount (\)</span>)</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reserves</td>
+<td>81</td>
+<td>Deposits</td>
+<td>81</td>
+</tr>
+<tr class="even">
+<td>Loans</td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Again, there are <strong>still $100 of reserves in the system</strong>: <strong>$10 at Bank A</strong>, <strong>$9 at Bank B</strong>, and <strong>$81 at Bank C</strong>.</p>
+<p>Then Bank C decides to keep <strong>10% of its deposits in reserves</strong> and loan out the rest, so its balance sheet becomes:</p>
+<p><strong>Third Bank’s Balance Sheet — After Lending</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Assets</th>
+<th>Amount (<span class="math inline">\() | Liabilities | Amount (\)</span>)</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reserves</td>
+<td>8.1</td>
+<td>Deposits</td>
+<td>81</td>
+</tr>
+<tr class="even">
+<td>Loans</td>
+<td>72.9</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>And so on. When the process is finished, the addition of <strong>$100 of reserves</strong> (remember, the increase in reserves was always <strong>$100</strong>) has been associated with an increase in deposits of:</p>
+<p><span class="math display">\[
+\$100 + \$90 + \$81 + \cdots = \$1{,}000.
+\]</span></p>
+<p>How do we know the sequence adds to <strong>$1,000</strong>?</p>
+<p>Let <span class="math inline">\(r\)</span> be the <strong>reserve requirement ratio</strong>. After an initial increase of <strong>1</strong> in the monetary base, the subsequent increases are <span class="math inline">\(1-r\)</span>, <span class="math inline">\((1-r)^2\)</span>, <span class="math inline">\((1-r)^3\)</span>, and so on.</p>
+<p>The total increase in the money supply is:</p>
+<p><span class="math display">\[
+1 + (1-r) + (1-r)^2 + (1-r)^3 + \cdots.
+\]</span></p>
+<p>Recall the <strong>geometric-series formula</strong>: if <span class="math inline">\(|c|&lt;1\)</span>, then</p>
+<p><span class="math display">\[
+1+c+c^2+c^3+\cdots=\frac{1}{1-c}.
+\]</span></p>
+<p>Therefore, the increase in deposits is:</p>
+<p><span class="math display">\[
+\frac{1}{1-(1-r)}=\frac{1}{r}
+\]</span></p>
+<p>times the initial increase. In the example, since <span class="math inline">\(r=0.10\)</span>:</p>
+<p><span class="math display">\[
+\Delta D = \frac{\$100}{0.10}=\$1{,}000.
+\]</span></p>
+<p>We should not be too surprised. The central bank added <strong>$100 in reserves</strong>, and each bank sets reserves equal to <strong>10% of deposits</strong>. The equilibrium involves an increase in deposits that is <strong>ten times the increase in reserves</strong>.</p>
+</section>
+<section id="the-money-multiplier" class="level3" data-number="9.2.2">
+<h3 data-number="9.2.2" class="anchored" data-anchor-id="the-money-multiplier"><span class="header-section-number">9.2.2</span> The Money Multiplier</h3>
+<p>The <strong>money multiplier</strong> is the ratio of the <strong>money supply</strong> to the <strong>monetary base</strong>. In this simple example, it equals:</p>
+<p><span class="math display">\[
+m=\frac{M1}{MB}=\frac{1}{r}.
+\]</span></p>
+<p>The money multiplier is often <strong>misinterpreted</strong>.</p>
+<p>In our example, the central bank starts by increasing deposits by <strong>$100</strong>, and the actions of the banking system end up increasing deposits by <strong>$1,000</strong>.</p>
+<p>People sometimes think that <strong>individual banks</strong> can somehow take in <strong>$100</strong> and then make an additional <strong>$900 in loans</strong> from this, creating funds out of nowhere. The lecturer argues that this would amount to lending funds they did not have, <strong>which would be fraud</strong>.</p>
+<p>That is <strong>not what happens in this example</strong>. In each case, banks lend <strong>90% of their deposits</strong> and retain the rest. They do not lend out amounts above those provided to them by depositors, which is their role as <strong>financial intermediaries</strong>.</p>
+<p>When a person deposits <strong>$100 in cash</strong> in a bank, that bank can lend at most an additional <strong>$100</strong>. However, in a <strong>fractional-reserve system</strong> with a reserve requirement of <strong>10%</strong>, <strong>$100 of reserves</strong> is consistent with <strong>$1,000 of total deposits</strong>.</p>
+</section>
+<section id="balance-sheet-with-deposits-staying-within-the-bank" class="level3" data-number="9.2.3">
+<h3 data-number="9.2.3" class="anchored" data-anchor-id="balance-sheet-with-deposits-staying-within-the-bank"><span class="header-section-number">9.2.3</span> Balance Sheet with Deposits Staying Within the Bank</h3>
+<p>In the previous example, money loaned to people was directly deposited in a <strong>different bank</strong>. If <strong>Bank A instead credited an account the borrower had at Bank A</strong>, its balance sheet would become:</p>
+<p><strong>First Bank’s Balance Sheet — Loan Credited to an Account at the Same Bank</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Assets</th>
+<th>Amount (<span class="math inline">\() | Liabilities | Amount (\)</span>)</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reserves</td>
+<td>100</td>
+<td>Deposits</td>
+<td>190</td>
+</tr>
+<tr class="even">
+<td>Loans</td>
+<td>90</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>This looks different from before, but the <strong>end outcome would be the same</strong>.</p>
+<ul>
+<li>Most loans are issued for the purpose of <strong>spending on particular things</strong>. Why take out a loan just to leave it sitting in the bank on deposit, since this will lose you money? The money gets spent and ends up in deposit accounts at <strong>other banks</strong>.</li>
+<li>If, for whatever reason, the loaned money remained in the bank as deposits, a bank choosing to meet <strong>only the minimum reserve requirement</strong> (as assumed here) could use these reserves to make new loans, just as other banks did in the example.</li>
+</ul>
+</section>
+<section id="create-deposits" class="level3" data-number="9.2.4">
+<h3 data-number="9.2.4" class="anchored" data-anchor-id="create-deposits"><span class="header-section-number">9.2.4</span> Create Deposits</h3>
+<p>Notice something about the money multiplier story: <strong>Loans create deposits.</strong> Economists have been teaching this for a long time.</p>
+<p>But people who argue that <strong>“banks are not financial intermediaries”</strong> often also say that <strong>“economists teach you that deposits create loans but it is really loans that create deposits.”</strong> The lecturer argues that this confuses different things.</p>
+<p>At the level of an <strong>individual bank</strong>, economists usually do not teach that a loan first shows up as a deposit <strong>within the same bank</strong>. (This is the “loans creating deposits” step that, as the lecturer notes, is not usually taught in the introductory presentation, although he showed it here.)</p>
+<p>There are good reasons for this teaching choice. Most of the money banks lend <strong>does not work this way</strong>: one needs to follow the initial step with the <strong>borrower spending the money</strong>, which most likely shows up in a <strong>different bank</strong>, just like the traditional story.</p>
+<p><strong>Individual banks are financial intermediaries and need deposits to issue loans.</strong></p>
+<p>But <strong>at the level of the banking system as a whole, loans create deposits</strong>.</p>
+</section>
+</section>
+<section id="incorporating-currency-and-excess-reserves" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="incorporating-currency-and-excess-reserves"><span class="header-section-number">9.3</span> Incorporating Currency and Excess Reserves</h2>
+<p>The previous example did not allow for the possibility that some loan proceeds would be <strong>withdrawn as currency</strong>, rather than just re-deposited in the banking system.</p>
+<p>Now assume <strong>currency is a constant fraction <span class="math inline">\(c\)</span> of deposits</strong>:</p>
+<p><span class="math display">\[
+C=cD.
+\]</span></p>
+<p>The previous example also assumed banks would maintain a reserve ratio of <span class="math inline">\(r\)</span>. Banks may want to hold <strong>more reserves for precautionary reasons</strong>. Assume that reserves are:</p>
+<p><span class="math display">\[
+R=(r+e)D,
+\]</span></p>
+<p>where <span class="math inline">\(e\)</span> represents <strong>excess reserves as a fraction of deposits</strong>.</p>
+<p>The <strong>monetary base</strong> is:</p>
+<p><span class="math display">\[
+MB=R+C=(r+e+c)D.
+\]</span></p>
+<p>The <strong>M1 money supply</strong> is:</p>
+<p><span class="math display">\[
+M1=D+C=(1+c)D.
+\]</span></p>
+<p>The <strong>money multiplier</strong> is thus:</p>
+<p><span class="math display">\[
+\boxed{m=\frac{M1}{MB}=\frac{1+c}{r+e+c}.}
+\]</span></p>
+<p>The money multiplier gets <strong>smaller as <span class="math inline">\(e\)</span> gets bigger</strong>. It also gets <strong>smaller as <span class="math inline">\(c\)</span> gets bigger</strong>, provided <span class="math inline">\(r+e&lt;1\)</span> (which the lecture assumes will be the case).</p>
+</section>
+<section id="friedman-and-schwartz-on-the-great-depression" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="friedman-and-schwartz-on-the-great-depression"><span class="header-section-number">9.4</span> Friedman and Schwartz on the Great Depression</h2>
+<p>Through careful collection of data that had not previously been available, <strong>Friedman and Schwartz’s</strong> famous 1963 study, <em>A Monetary History of the United States, 1867–1960</em>, showed that <strong><span class="math inline">\(e\)</span> and <span class="math inline">\(c\)</span> increased during the Great Depression</strong> and that there was a <strong>sharp decline in the money multiplier</strong>.</p>
+<p>The underlying cause was a <strong>banking crisis</strong>, which led to a <strong>lack of confidence in banks</strong>.</p>
+<p>Depositors withdrew money from banks they viewed as perhaps not being safe, preferring to keep it as <strong>cash</strong>, and banks needed to keep <strong>large stocks of reserves</strong> in case they were hit by a <strong>bank run</strong>.</p>
+<p>The <strong>Federal Reserve during the 1930s</strong> did not collect detailed monetary statistics and had not been aware that the <strong>money supply was sharply contracting</strong>.</p>
+<p>Friedman and Schwartz attributed the decline in economic activity to the <strong>sharp contraction of the money supply</strong>.</p>
+<p><em>The figure tracks the currency ratio <span class="math inline">\(c\)</span> and the excess-reserves ratio <span class="math inline">\(e\)</span> from 1929 to 1933. Both increased around the banking crises, illustrating the mechanisms described on Slide 25.</em></p>
+<div id="fig-ch09-09" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch09-09-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://assets.yalinliu.org/Books/Money/assets/part9/fig-09-09.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-09-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.9: Currency-deposit and excess-reserve ratios during the Great Depression, 1929–1933
+</figcaption>
+</figure>
+</div>
+<p><strong>Source:</strong> Federal Reserve Bulletin; Milton Friedman and Anna Jacobson Schwartz, <em>A Monetary History of the United States, 1867–1960</em> (1963), p.&nbsp;333, as credited in the original slide.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Chap8.html" class="pagination-link" aria-label="Macro-Prudential Policies">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Macro-Prudential Policies</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Chap10.html" class="pagination-link" aria-label="Monetarism">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Monetarism</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
