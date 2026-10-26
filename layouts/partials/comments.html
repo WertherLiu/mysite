@@ -1,0 +1,25 @@
+<div class="content">
+{{ if and (not .IsSection) (not .IsHome) (not (eq .Kind "term")) }}
+<!--
+  Configure Giscus for this website by following:
+  https://hongtaoh.com/cn/2024/03/22/personal-website-tutorial/#%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA
+-->
+<script src="https://giscus.app/client.js"
+        data-repo=""
+        data-repo-id=""
+        data-category="Announcements"
+        data-category-id=""
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+<br>
+{{ end }}
+</div>
