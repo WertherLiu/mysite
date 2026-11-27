@@ -1,0 +1,23 @@
+<div class="content">
+{{/* Set this to the Announcements category ID after enabling Discussions in WertherLiu/mysite. */}}
+{{ $categoryID := "" }}
+{{ if and $categoryID (not .IsSection) (not .IsHome) (ne .Kind "term") }}
+<script src="https://giscus.app/client.js"
+        data-repo="WertherLiu/mysite"
+        data-repo-id="R_kgDORITu4w"
+        data-category="Announcements"
+        data-category-id="{{ $categoryID }}"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+<br>
+{{ end }}
+</div>
